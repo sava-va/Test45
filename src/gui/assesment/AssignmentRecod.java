@@ -31,70 +31,71 @@ public class AssignmentRecod extends javax.swing.JPanel {
         basePanel1 = new gui.basic.panel.basePanel();
         componentPanel1 = new gui.basic.panel.ComponentPanel();
         jLabel2 = new javax.swing.JLabel();
-        FirstNameTextField = new gui.basic.components.RoundTextField();
+        assignmentNameTextField = new gui.basic.components.RoundTextField();
         jLabel4 = new javax.swing.JLabel();
-        roundTextField3 = new gui.basic.components.RoundTextField();
+        subjectTextField = new gui.basic.components.RoundTextField();
         jLabel3 = new javax.swing.JLabel();
-        roundTextField4 = new gui.basic.components.RoundTextField();
+        classTextField = new gui.basic.components.RoundTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        noteTextArea = new javax.swing.JTextArea();
         jLabel8 = new javax.swing.JLabel();
-        roundTextField9 = new gui.basic.components.RoundTextField();
-        roundTextField10 = new gui.basic.components.RoundTextField();
-        StudentCombo1 = new gui.basic.components.RoundCombo();
+        markTextField = new gui.basic.components.RoundTextField();
+        assignmetDateTextField = new gui.basic.components.RoundTextField();
+        studentCombo = new gui.basic.components.RoundCombo();
         jLabel7 = new javax.swing.JLabel();
         componentPanel3 = new gui.basic.panel.ComponentPanel();
-        roundButton2 = new gui.basic.components.RoundButton();
+        drawerButton = new gui.basic.components.RoundButton();
         drawerCombo = new gui.basic.components.RoundCombo();
         jLabel13 = new javax.swing.JLabel();
-        FileCombo = new gui.basic.components.RoundCombo();
-        roundButton3 = new gui.basic.components.RoundButton();
+        fileCombo = new gui.basic.components.RoundCombo();
+        fileButton = new gui.basic.components.RoundButton();
         componentPanel4 = new gui.basic.panel.ComponentPanel();
         jLabel17 = new javax.swing.JLabel();
         roundButton4 = new gui.basic.components.RoundButton();
-        StudentCombo = new gui.basic.components.RoundCombo();
-        roundButton7 = new gui.basic.components.RoundButton();
+        assignmentCombo = new gui.basic.components.RoundCombo();
+        updateButton = new gui.basic.components.RoundButton();
+        updateStudentCombo = new gui.basic.components.RoundCombo();
         componentPanel5 = new gui.basic.panel.ComponentPanel();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        actionButton1 = new gui.basic.components.ActionButton();
+        correctionCheckBox = new javax.swing.JCheckBox();
+        submitButton = new gui.basic.components.ActionButton();
         componentPanel6 = new gui.basic.panel.ComponentPanel();
         jLabel14 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         AssigmentCombo = new gui.basic.components.RoundCombo();
-        roundButton9 = new gui.basic.components.RoundButton();
-        roundButton5 = new gui.basic.components.RoundButton();
+        assignmentButton = new gui.basic.components.RoundButton();
+        resetButton = new gui.basic.components.RoundButton();
         componentPanel7 = new gui.basic.panel.ComponentPanel();
         componentPanel8 = new gui.basic.panel.ComponentPanel();
         jLabel19 = new javax.swing.JLabel();
-        roundButton10 = new gui.basic.components.RoundButton();
+        assignmentAddButton = new gui.basic.components.RoundButton();
         componentPanel9 = new gui.basic.panel.ComponentPanel();
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel2.setText("Assignment Name");
 
-        FirstNameTextField.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        FirstNameTextField.addActionListener(new java.awt.event.ActionListener() {
+        assignmentNameTextField.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        assignmentNameTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FirstNameTextFieldActionPerformed(evt);
+                assignmentNameTextFieldActionPerformed(evt);
             }
         });
 
         jLabel4.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel4.setText("Student ID");
 
-        roundTextField3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        roundTextField3.addActionListener(new java.awt.event.ActionListener() {
+        subjectTextField.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        subjectTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                roundTextField3ActionPerformed(evt);
+                subjectTextFieldActionPerformed(evt);
             }
         });
 
         jLabel3.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel3.setText("Subject");
 
-        roundTextField4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        classTextField.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel5.setText("Class");
@@ -102,20 +103,20 @@ public class AssignmentRecod extends javax.swing.JPanel {
         jLabel6.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel6.setText("Notes");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        noteTextArea.setColumns(20);
+        noteTextArea.setRows(5);
+        jScrollPane1.setViewportView(noteTextArea);
 
         jLabel8.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel8.setText("Marks");
 
-        roundTextField9.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        markTextField.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
 
-        roundTextField10.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        assignmetDateTextField.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
 
-        StudentCombo1.addActionListener(new java.awt.event.ActionListener() {
+        studentCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                StudentCombo1ActionPerformed(evt);
+                studentComboActionPerformed(evt);
             }
         });
 
@@ -131,7 +132,7 @@ public class AssignmentRecod extends javax.swing.JPanel {
                 .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(componentPanel1Layout.createSequentialGroup()
                         .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(FirstNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(assignmentNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -140,8 +141,8 @@ public class AssignmentRecod extends javax.swing.JPanel {
                             .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(roundTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
-                                .addComponent(roundTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(subjectTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
+                                .addComponent(classTextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(20, 20, 20))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, componentPanel1Layout.createSequentialGroup()
@@ -149,10 +150,10 @@ public class AssignmentRecod extends javax.swing.JPanel {
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(componentPanel1Layout.createSequentialGroup()
                                 .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(StudentCombo1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE)
-                                    .addComponent(roundTextField10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(studentCombo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE)
+                                    .addComponent(assignmetDateTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(roundTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(markTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(21, 21, 21))
                     .addGroup(componentPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -166,27 +167,27 @@ public class AssignmentRecod extends javax.swing.JPanel {
                     .addGroup(componentPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(FirstNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(assignmentNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(componentPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(roundTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(subjectTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(roundTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(roundTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(classTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(assignmetDateTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(roundTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(StudentCombo1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(markTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(studentCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -194,12 +195,12 @@ public class AssignmentRecod extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        roundButton2.setText("Available Drawer");
+        drawerButton.setText("Available Drawer");
 
         jLabel13.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel13.setText("Drawer No");
 
-        roundButton3.setText("Add File");
+        fileButton.setText("Add File");
 
         javax.swing.GroupLayout componentPanel3Layout = new javax.swing.GroupLayout(componentPanel3);
         componentPanel3.setLayout(componentPanel3Layout);
@@ -210,11 +211,11 @@ public class AssignmentRecod extends javax.swing.JPanel {
                 .addGroup(componentPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(drawerCombo, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
-                    .addComponent(FileCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(fileCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(componentPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(roundButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(roundButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(drawerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         componentPanel3Layout.setVerticalGroup(
@@ -227,12 +228,12 @@ public class AssignmentRecod extends javax.swing.JPanel {
                         .addGap(37, 37, 37))
                     .addGroup(componentPanel3Layout.createSequentialGroup()
                         .addGroup(componentPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(roundButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                            .addComponent(drawerButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
                             .addComponent(drawerCombo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(componentPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(roundButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                            .addComponent(FileCombo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(fileButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                            .addComponent(fileCombo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
 
@@ -246,13 +247,19 @@ public class AssignmentRecod extends javax.swing.JPanel {
             }
         });
 
-        StudentCombo.addActionListener(new java.awt.event.ActionListener() {
+        assignmentCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                StudentComboActionPerformed(evt);
+                assignmentComboActionPerformed(evt);
             }
         });
 
-        roundButton7.setText("Update");
+        updateButton.setText("Update");
+
+        updateStudentCombo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateStudentComboActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout componentPanel4Layout = new javax.swing.GroupLayout(componentPanel4);
         componentPanel4.setLayout(componentPanel4Layout);
@@ -261,34 +268,47 @@ public class AssignmentRecod extends javax.swing.JPanel {
             .addGroup(componentPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(roundButton7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(componentPanel4Layout.createSequentialGroup()
-                        .addComponent(StudentCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(18, 18, 18)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(roundButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(componentPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(componentPanel4Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(updateButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(assignmentCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
+            .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(componentPanel4Layout.createSequentialGroup()
+                    .addGap(22, 22, 22)
+                    .addComponent(updateStudentCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(170, 170, 170)))
         );
         componentPanel4Layout.setVerticalGroup(
             componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(componentPanel4Layout.createSequentialGroup()
                 .addGap(11, 11, 11)
                 .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(StudentCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(roundButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(roundButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(assignmentCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(roundButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(updateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
+            .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, componentPanel4Layout.createSequentialGroup()
+                    .addContainerGap(99, Short.MAX_VALUE)
+                    .addComponent(updateStudentCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(69, 69, 69)))
         );
 
-        jCheckBox3.setText("Above All Detatil Correct ");
-        jCheckBox3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        correctionCheckBox.setText("Above All Detatil Correct ");
+        correctionCheckBox.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
 
-        actionButton1.setText("Submit");
+        submitButton.setText("Submit");
 
         javax.swing.GroupLayout componentPanel5Layout = new javax.swing.GroupLayout(componentPanel5);
         componentPanel5.setLayout(componentPanel5Layout);
@@ -296,9 +316,9 @@ public class AssignmentRecod extends javax.swing.JPanel {
             componentPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(componentPanel5Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(jCheckBox3)
+                .addComponent(correctionCheckBox)
                 .addGap(18, 18, 18)
-                .addComponent(actionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(submitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(38, Short.MAX_VALUE))
         );
         componentPanel5Layout.setVerticalGroup(
@@ -306,8 +326,8 @@ public class AssignmentRecod extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, componentPanel5Layout.createSequentialGroup()
                 .addContainerGap(19, Short.MAX_VALUE)
                 .addGroup(componentPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(actionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox3))
+                    .addComponent(submitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(correctionCheckBox))
                 .addGap(20, 20, 20))
         );
 
@@ -317,9 +337,9 @@ public class AssignmentRecod extends javax.swing.JPanel {
         jLabel16.setFont(new java.awt.Font("Yu Gothic UI", 1, 13)); // NOI18N
         jLabel16.setText("     1254684 atuto generated");
 
-        roundButton9.setText("Set");
+        assignmentButton.setText("Set");
 
-        roundButton5.setText("Reset");
+        resetButton.setText("Reset");
 
         javax.swing.GroupLayout componentPanel6Layout = new javax.swing.GroupLayout(componentPanel6);
         componentPanel6.setLayout(componentPanel6Layout);
@@ -333,9 +353,9 @@ public class AssignmentRecod extends javax.swing.JPanel {
                 .addGap(338, 338, 338)
                 .addComponent(AssigmentCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(roundButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(assignmentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(roundButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
         );
         componentPanel6Layout.setVerticalGroup(
@@ -345,8 +365,8 @@ public class AssignmentRecod extends javax.swing.JPanel {
                 .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(AssigmentCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(roundButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(roundButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(assignmentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -361,13 +381,13 @@ public class AssignmentRecod extends javax.swing.JPanel {
         );
         componentPanel7Layout.setVerticalGroup(
             componentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 131, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
 
         jLabel19.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel19.setText("New Assignmert");
 
-        roundButton10.setText("Add");
+        assignmentAddButton.setText("Add");
 
         javax.swing.GroupLayout componentPanel8Layout = new javax.swing.GroupLayout(componentPanel8);
         componentPanel8.setLayout(componentPanel8Layout);
@@ -377,7 +397,7 @@ public class AssignmentRecod extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(componentPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(roundButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(assignmentAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         componentPanel8Layout.setVerticalGroup(
@@ -386,7 +406,7 @@ public class AssignmentRecod extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(roundButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(assignmentAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(161, 161, 161))
         );
 
@@ -435,7 +455,7 @@ public class AssignmentRecod extends javax.swing.JPanel {
                         .addComponent(componentPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(componentPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(componentPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(componentPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -460,35 +480,40 @@ public class AssignmentRecod extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void FirstNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstNameTextFieldActionPerformed
+    private void assignmentNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignmentNameTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_FirstNameTextFieldActionPerformed
+    }//GEN-LAST:event_assignmentNameTextFieldActionPerformed
 
-    private void roundTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundTextField3ActionPerformed
+    private void subjectTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_roundTextField3ActionPerformed
+    }//GEN-LAST:event_subjectTextFieldActionPerformed
 
     private void roundButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_roundButton4ActionPerformed
 
-    private void StudentComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StudentComboActionPerformed
+    private void assignmentComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignmentComboActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_StudentComboActionPerformed
+    }//GEN-LAST:event_assignmentComboActionPerformed
 
-    private void StudentCombo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StudentCombo1ActionPerformed
+    private void studentComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentComboActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_StudentCombo1ActionPerformed
+    }//GEN-LAST:event_studentComboActionPerformed
+
+    private void updateStudentComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateStudentComboActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_updateStudentComboActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private gui.basic.components.RoundCombo AssigmentCombo;
-    private gui.basic.components.RoundCombo FileCombo;
-    private gui.basic.components.RoundTextField FirstNameTextField;
-    private gui.basic.components.RoundCombo StudentCombo;
-    private gui.basic.components.RoundCombo StudentCombo1;
-    private gui.basic.components.ActionButton actionButton1;
+    private gui.basic.components.RoundButton assignmentAddButton;
+    private gui.basic.components.RoundButton assignmentButton;
+    private gui.basic.components.RoundCombo assignmentCombo;
+    private gui.basic.components.RoundTextField assignmentNameTextField;
+    private gui.basic.components.RoundTextField assignmetDateTextField;
     private gui.basic.panel.basePanel basePanel1;
+    private gui.basic.components.RoundTextField classTextField;
     private gui.basic.panel.ComponentPanel componentPanel1;
     private gui.basic.panel.ComponentPanel componentPanel3;
     private gui.basic.panel.ComponentPanel componentPanel4;
@@ -497,8 +522,11 @@ public class AssignmentRecod extends javax.swing.JPanel {
     private gui.basic.panel.ComponentPanel componentPanel7;
     private gui.basic.panel.ComponentPanel componentPanel8;
     private gui.basic.panel.ComponentPanel componentPanel9;
+    private javax.swing.JCheckBox correctionCheckBox;
+    private gui.basic.components.RoundButton drawerButton;
     private gui.basic.components.RoundCombo drawerCombo;
-    private javax.swing.JCheckBox jCheckBox3;
+    private gui.basic.components.RoundButton fileButton;
+    private gui.basic.components.RoundCombo fileCombo;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel16;
@@ -512,17 +540,14 @@ public class AssignmentRecod extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private gui.basic.components.RoundButton roundButton10;
-    private gui.basic.components.RoundButton roundButton2;
-    private gui.basic.components.RoundButton roundButton3;
+    private gui.basic.components.RoundTextField markTextField;
+    private javax.swing.JTextArea noteTextArea;
+    private gui.basic.components.RoundButton resetButton;
     private gui.basic.components.RoundButton roundButton4;
-    private gui.basic.components.RoundButton roundButton5;
-    private gui.basic.components.RoundButton roundButton7;
-    private gui.basic.components.RoundButton roundButton9;
-    private gui.basic.components.RoundTextField roundTextField10;
-    private gui.basic.components.RoundTextField roundTextField3;
-    private gui.basic.components.RoundTextField roundTextField4;
-    private gui.basic.components.RoundTextField roundTextField9;
+    private gui.basic.components.RoundCombo studentCombo;
+    private gui.basic.components.RoundTextField subjectTextField;
+    private gui.basic.components.ActionButton submitButton;
+    private gui.basic.components.RoundButton updateButton;
+    private gui.basic.components.RoundCombo updateStudentCombo;
     // End of variables declaration//GEN-END:variables
 }
