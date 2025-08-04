@@ -70,8 +70,9 @@ public class EquipmentRegistration extends javax.swing.JPanel {
         componentPanel9 = new gui.basic.panel.ComponentPanel();
         jLabel15 = new javax.swing.JLabel();
         locationCombo = new gui.basic.components.RoundCombo();
-        roundButton8 = new gui.basic.components.RoundButton();
         locationTextField = new gui.basic.components.RoundTextField();
+        roundButton9 = new gui.basic.components.RoundButton();
+        roundButton8 = new gui.basic.components.RoundButton();
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel2.setText("Name");
@@ -343,7 +344,7 @@ public class EquipmentRegistration extends javax.swing.JPanel {
         );
         componentPanel7Layout.setVerticalGroup(
             componentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
 
         jLabel19.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
@@ -388,9 +389,11 @@ public class EquipmentRegistration extends javax.swing.JPanel {
         jLabel15.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel15.setText("Location");
 
-        roundButton8.setText("Search");
-
         locationTextField.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+
+        roundButton9.setText("Search");
+
+        roundButton8.setText("New Location");
 
         javax.swing.GroupLayout componentPanel9Layout = new javax.swing.GroupLayout(componentPanel9);
         componentPanel9.setLayout(componentPanel9Layout);
@@ -402,13 +405,14 @@ public class EquipmentRegistration extends javax.swing.JPanel {
                     .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(componentPanel9Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addGroup(componentPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(locationCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(componentPanel9Layout.createSequentialGroup()
-                                .addComponent(locationTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(roundButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap())
+                        .addGroup(componentPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(locationCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(locationTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(componentPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(roundButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(roundButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(12, 12, 12))
         );
         componentPanel9Layout.setVerticalGroup(
             componentPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -416,12 +420,14 @@ public class EquipmentRegistration extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addComponent(locationCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addGroup(componentPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(locationTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(locationCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(roundButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40))
+                .addGap(25, 25, 25)
+                .addGroup(componentPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(roundButton9, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                    .addComponent(locationTextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(33, 33, 33))
         );
 
         javax.swing.GroupLayout basePanel1Layout = new javax.swing.GroupLayout(basePanel1);
@@ -537,6 +543,7 @@ public class EquipmentRegistration extends javax.swing.JPanel {
     private gui.basic.components.RoundButton responsibleSearchButton;
     private gui.basic.components.RoundTextField responsibleTextField;
     private gui.basic.components.RoundButton roundButton8;
+    private gui.basic.components.RoundButton roundButton9;
     private gui.basic.components.ActionButton submitButton;
     private gui.basic.components.RoundTextField typeTextField;
     private gui.basic.components.RoundButton updateButton;
