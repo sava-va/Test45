@@ -82,9 +82,9 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="FileCombo1" alignment="0" pref="408" max="32767" attributes="0"/>
+                                  <Component id="subjectCombo" alignment="0" pref="408" max="32767" attributes="0"/>
                                   <Component id="FileCombo" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="FirstNameTextField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="assigmentTextField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jLabel3" alignment="0" min="-2" pref="57" max="-2" attributes="0"/>
                                   <Component id="jLabel4" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
                               </Group>
@@ -107,11 +107,11 @@
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="FirstNameTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="assigmentTextField" min="-2" pref="30" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                      <Component id="FileCombo1" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="subjectCombo" min="-2" pref="29" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel5" min="-2" pref="24" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
@@ -145,14 +145,14 @@
                 <Property name="text" type="java.lang.String" value="Subject"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundTextField" name="FirstNameTextField">
+            <Component class="gui.basic.components.RoundTextField" name="assigmentTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FirstNameTextFieldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="assigmentTextFieldActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel5">
@@ -175,7 +175,7 @@
             </Component>
             <Component class="gui.basic.components.RoundCombo" name="FileCombo">
             </Component>
-            <Component class="gui.basic.components.RoundCombo" name="FileCombo1">
+            <Component class="gui.basic.components.RoundCombo" name="subjectCombo">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
