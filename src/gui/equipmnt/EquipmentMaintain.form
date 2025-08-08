@@ -84,7 +84,7 @@
                       <Component id="componentPanel8" pref="168" max="32767" attributes="0"/>
                       <Component id="componentPanel9" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="19" max="32767" attributes="0"/>
+                  <EmptySpace pref="16" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -95,42 +95,33 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="nextMaintainDateChooser" alignment="0" max="32767" attributes="0"/>
+                          <Component id="priceTextField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="purchaseDateChooser" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                  <Component id="nameTextField" min="-2" pref="375" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
+                                  <Component id="jLabel4" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <Component id="jLabel18" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
+                                  <Component id="jLabel17" min="-2" pref="115" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="typeTextField" min="-2" pref="330" max="-2" attributes="0"/>
-                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <EmptySpace min="0" pref="235" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="nextMaintainDateChooser" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="priceTextField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="purchaseDateChooser" alignment="0" max="32767" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel6" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
-                                          <Component id="jLabel4" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
-                                          <Component id="jLabel18" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="invoiceTextField" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
-                                  <Component id="qtyTextField" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" alignment="0" min="-2" pref="154" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <Component id="equipmentCombo" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="invoiceTextField" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
+                          <Component id="jLabel5" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
+                          <Component id="qtyTextField" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="0" min="-2" pref="154" max="-2" attributes="0"/>
+                          <Component id="typeTextField" min="-2" pref="330" max="-2" attributes="0"/>
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nameTextField" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   </Group>
@@ -139,49 +130,48 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="nameTextField" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="typeTextField" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel17" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="nameTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="equipmentCombo" min="-2" pref="33" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel4" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="purchaseDateChooser" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="typeTextField" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jLabel4" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel6" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="purchaseDateChooser" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel5" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="invoiceTextField" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel6" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="priceTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="priceTextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="invoiceTextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel18" min="-2" pref="24" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel7" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="qtyTextField" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jLabel7" min="-2" pref="24" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="nextMaintainDateChooser" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="nextMaintainDateChooser" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="qtyTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace pref="35" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -288,6 +278,16 @@
               </Properties>
             </Component>
             <Component class="com.toedter.calendar.JDateChooser" name="nextMaintainDateChooser">
+            </Component>
+            <Component class="gui.basic.components.RoundCombo" name="equipmentCombo">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel17">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Yu Gothic UI" size="13" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Update Equipment"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -426,7 +426,7 @@
             </Component>
             <Component class="gui.basic.components.ActionButton" name="submitButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Submit"/>
+                <Property name="text" type="java.lang.String" value="Update"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -441,9 +441,9 @@
                       <Component id="jLabel14" pref="104" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="equipmentIdLabel" min="-2" pref="188" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="720" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="705" max="-2" attributes="0"/>
                       <Component id="resetButton" min="-2" pref="154" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -454,9 +454,13 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel14" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="equipmentIdLabel" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="resetButton" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="16" max="32767" attributes="0"/>
+                      <EmptySpace pref="23" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="resetButton" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -490,15 +494,37 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="equipmentCombo1" min="-2" pref="231" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="drawerButton1" min="-2" pref="148" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="equipmentCombo1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="drawerButton1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="gui.basic.components.RoundCombo" name="equipmentCombo1">
+            </Component>
+            <Component class="gui.basic.components.RoundButton" name="drawerButton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Remove"/>
+              </Properties>
+            </Component>
+          </SubComponents>
         </Container>
         <Container class="gui.basic.panel.ComponentPanel" name="componentPanel8">
 
