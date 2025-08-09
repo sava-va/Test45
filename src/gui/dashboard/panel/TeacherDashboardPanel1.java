@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package gui.home.panel;
+package gui.dashboard.panel;
 
 /**
  *
- * @author savaa
+ * @author TeamNextOra
  */
-public class DashboardPanel extends javax.swing.JPanel {
+public class TeacherDashboardPanel1 extends javax.swing.JPanel {
 
     /**
-     * Creates new form Dashboar
+     * Creates new form dashboard
      */
-    public DashboardPanel() {
+    public TeacherDashboardPanel1() {
         initComponents();
     }
 

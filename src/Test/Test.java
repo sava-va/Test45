@@ -6,7 +6,7 @@ package Test;
 
 /**
  *
- * @author sava
+ * @author TeamNextOra
  */
 public class Test extends javax.swing.JFrame {
 

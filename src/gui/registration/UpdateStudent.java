@@ -6,7 +6,7 @@ package gui.registration;
 
 /**
  *
- * @author savaa
+ * @author TeamNextOra
  */
 public class UpdateStudent extends javax.swing.JPanel {
 
@@ -69,6 +69,7 @@ public class UpdateStudent extends javax.swing.JPanel {
         zonalCheckBox = new javax.swing.JCheckBox();
         addFileButton = new gui.basic.components.RoundButton();
         jLabel15 = new javax.swing.JLabel();
+        fileCombo = new gui.basic.components.RoundCombo();
         componentPanel8 = new gui.basic.panel.ComponentPanel();
         submitButton1 = new gui.basic.components.ActionButton();
         statusCombo = new gui.basic.components.RoundCombo();
@@ -353,7 +354,9 @@ public class UpdateStudent extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addComponent(zonalCheckBox, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(componentPanel4Layout.createSequentialGroup()
-                        .addComponent(drawerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(drawerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fileCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(availableButton, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -386,7 +389,9 @@ public class UpdateStudent extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(addFileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(addFileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fileCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30))
         );
 
@@ -542,6 +547,7 @@ public class UpdateStudent extends javax.swing.JPanel {
     private gui.basic.components.RoundCombo drawerCombo;
     private gui.basic.components.RoundTextField emailTextField;
     private gui.basic.components.RoundTextField enrollDateTextField;
+    private gui.basic.components.RoundCombo fileCombo;
     private gui.basic.components.RoundTextField firstNameTextField;
     private gui.basic.components.RoundTextField firstNameTextField1;
     private gui.basic.components.RoundCombo genderCombo;

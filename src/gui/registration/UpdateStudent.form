@@ -524,8 +524,11 @@
                               <Component id="zonalCheckBox" min="-2" pref="167" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="drawerCombo" min="-2" pref="186" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="drawerCombo" min="-2" pref="186" max="-2" attributes="0"/>
+                                  <Component id="fileCombo" alignment="0" min="-2" pref="186" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="availableButton" min="-2" pref="148" max="-2" attributes="0"/>
                                   <Component id="addFileButton" min="-2" pref="148" max="-2" attributes="0"/>
@@ -566,7 +569,10 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel15" min="-2" pref="24" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="addFileButton" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="addFileButton" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="fileCombo" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -620,6 +626,8 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="File No"/>
               </Properties>
+            </Component>
+            <Component class="gui.basic.components.RoundCombo" name="fileCombo">
             </Component>
           </SubComponents>
         </Container>

@@ -8,12 +8,12 @@ package gui.registration;
  *
  * @author TeamNextOra
  */
-public class RegistrationPane extends javax.swing.JPanel {
+public class ModificationPane extends javax.swing.JPanel {
 
     /**
      * Creates new form RegistrationPane
      */
-    public RegistrationPane() {
+    public ModificationPane() {
         initComponents();
     }
 
@@ -29,19 +29,13 @@ public class RegistrationPane extends javax.swing.JPanel {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        gurdientRegistration1 = new gui.registration.GurdientRegistration();
-        principleRegistration1 = new gui.registration.PrincipleRegistration();
-        teacherRegistration1 = new gui.registration.TeacherRegistration();
-        gurdientRegistration2 = new gui.registration.GurdientRegistration();
-        studentRegistration1 = new gui.registration.StudentRegistration();
+        updateOfficers1 = new gui.registration.UpdateOfficers();
+        updateStudent1 = new gui.registration.UpdateStudent();
 
         setPreferredSize(new java.awt.Dimension(1180, 625));
 
-        jTabbedPane1.addTab("Admin Registration", gurdientRegistration1);
-        jTabbedPane1.addTab("Principle Registration", principleRegistration1);
-        jTabbedPane1.addTab("Teacher Registration", teacherRegistration1);
-        jTabbedPane1.addTab("Gurdient Registration", gurdientRegistration2);
-        jTabbedPane1.addTab("Student Registration", studentRegistration1);
+        jTabbedPane1.addTab("Officer Modifcation", updateOfficers1);
+        jTabbedPane1.addTab("Student Modifcation", updateStudent1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -60,11 +54,8 @@ public class RegistrationPane extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private gui.registration.GurdientRegistration gurdientRegistration1;
-    private gui.registration.GurdientRegistration gurdientRegistration2;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private gui.registration.PrincipleRegistration principleRegistration1;
-    private gui.registration.StudentRegistration studentRegistration1;
-    private gui.registration.TeacherRegistration teacherRegistration1;
+    private gui.registration.UpdateOfficers updateOfficers1;
+    private gui.registration.UpdateStudent updateStudent1;
     // End of variables declaration//GEN-END:variables
 }

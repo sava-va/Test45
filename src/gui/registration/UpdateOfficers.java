@@ -6,7 +6,7 @@ package gui.registration;
 
 /**
  *
- * @author savaa
+ * @author TeamNextOra
  */
 public class UpdateOfficers extends javax.swing.JPanel {
 

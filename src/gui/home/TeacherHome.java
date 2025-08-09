@@ -4,22 +4,22 @@
  */
 package gui.home;
 
-import gui.home.panel.DashboardPanel;
+import gui.dashboard.panel.AdminDashboardPanel;
 import com.formdev.flatlaf.FlatLightLaf;
 import java.awt.CardLayout;
 import javax.swing.JFrame;
 
 /**
  *
- * @author savaa
+ * @author TeamNextOra
  */
-public class Home extends JFrame {
+public class TeacherHome extends JFrame {
 
-    private DashboardPanel dashboardPanel;
+    private AdminDashboardPanel dashboardPanel;
     private CardLayout contentPanelLayout;
     
     
-    public Home() {
+    public TeacherHome() {
         initComponents();
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setPanels();
@@ -30,7 +30,7 @@ public class Home extends JFrame {
             this.contentPanelLayout = (CardLayout) contentPanel.getLayout();
         }
         
-        this.dashboardPanel = new DashboardPanel();
+        this.dashboardPanel = new AdminDashboardPanel();
         
         this.contentPanel.add(dashboardPanel, "dashboard_panel");
         
@@ -52,6 +52,7 @@ public class Home extends JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         sidePannel1 = new gui.home.SidePannel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Home");
@@ -88,15 +89,23 @@ public class Home extends JFrame {
                 .addGap(27, 27, 27))
         );
 
+        jLabel3.setText("jLabel3");
+
         javax.swing.GroupLayout sidePannel1Layout = new javax.swing.GroupLayout(sidePannel1);
         sidePannel1.setLayout(sidePannel1Layout);
         sidePannel1Layout.setHorizontalGroup(
             sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 245, Short.MAX_VALUE)
+            .addGroup(sidePannel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
+                .addContainerGap())
         );
         sidePannel1Layout.setVerticalGroup(
             sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(sidePannel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -136,7 +145,7 @@ public class Home extends JFrame {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Home().setVisible(true);
+                new TeacherHome().setVisible(true);
             }
         });
     }
@@ -146,6 +155,7 @@ public class Home extends JFrame {
     private gui.home.HeadPanel headPanel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private gui.home.SidePannel sidePannel1;
     // End of variables declaration//GEN-END:variables
