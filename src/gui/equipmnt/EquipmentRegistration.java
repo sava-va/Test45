@@ -50,6 +50,8 @@ public class EquipmentRegistration extends javax.swing.JPanel {
         fileCombo = new gui.basic.components.RoundCombo();
         fileButton = new gui.basic.components.RoundButton();
         componentPanel4 = new gui.basic.panel.ComponentPanel();
+        fileButton1 = new gui.basic.components.RoundButton();
+        jLabel8 = new javax.swing.JLabel();
         componentPanel5 = new gui.basic.panel.ComponentPanel();
         correctionCheckBox = new javax.swing.JCheckBox();
         submitButton = new gui.basic.components.ActionButton();
@@ -234,15 +236,34 @@ public class EquipmentRegistration extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
+        fileButton1.setText("Add Photo");
+
+        jLabel8.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("image");
+        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+
         javax.swing.GroupLayout componentPanel4Layout = new javax.swing.GroupLayout(componentPanel4);
         componentPanel4.setLayout(componentPanel4Layout);
         componentPanel4Layout.setHorizontalGroup(
             componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, componentPanel4Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(fileButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         componentPanel4Layout.setVerticalGroup(
             componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, componentPanel4Layout.createSequentialGroup()
+                .addGap(138, 138, 138)
+                .addComponent(fileButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(componentPanel4Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         correctionCheckBox.setText("Above All Detatil Correct ");
@@ -481,6 +502,7 @@ public class EquipmentRegistration extends javax.swing.JPanel {
     private gui.basic.components.RoundButton drawerButton;
     private javax.swing.JLabel equipmentIdLabel;
     private gui.basic.components.RoundButton fileButton;
+    private gui.basic.components.RoundButton fileButton1;
     private gui.basic.components.RoundCombo fileCombo;
     private javax.swing.JCheckBox invoiceCheckBox;
     private gui.basic.components.RoundTextField invoiceTextField;
@@ -495,6 +517,7 @@ public class EquipmentRegistration extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private gui.basic.components.RoundCombo locationCombo;
     private gui.basic.components.RoundTextField locationTextField;
     private gui.basic.components.RoundTextField nameTextField;

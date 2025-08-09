@@ -138,7 +138,6 @@
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="AddressLine2TextField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="landLineTextField" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="passwordTextField" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel5" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
@@ -149,6 +148,7 @@
                                       </Group>
                                       <EmptySpace min="-2" pref="195" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="classCombo" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -218,7 +218,7 @@
                           <Group type="102" attributes="0">
                               <Component id="jLabel20" min="-2" pref="24" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                              <Component id="passwordTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="classCombo" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -398,20 +398,15 @@
                 <Property name="text" type="java.lang.String" value="Email"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundTextField" name="passwordTextField">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
-                </Property>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel20">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI" size="13" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Password"/>
+                <Property name="text" type="java.lang.String" value="Class"/>
               </Properties>
+            </Component>
+            <Component class="gui.basic.components.RoundCombo" name="classCombo">
             </Component>
           </SubComponents>
         </Container>
@@ -421,10 +416,10 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel16" min="-2" pref="32" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="idLabel" min="-2" pref="188" max="-2" attributes="0"/>
+                      <Component id="firstNameTextField1" min="-2" pref="344" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="resetButton" min="-2" pref="154" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
@@ -434,15 +429,13 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="resetButton" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                          <Group type="103" alignment="3" groupAlignment="3" attributes="0">
-                              <Component id="jLabel16" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                              <Component id="idLabel" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="firstNameTextField1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -453,20 +446,22 @@
                 <Property name="text" type="java.lang.String" value="Reset"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="idLabel">
+            <Component class="gui.basic.components.RoundTextField" name="firstNameTextField1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI" size="13" style="1"/>
+                  <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="   atuto generated"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="firstNameTextField1ActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel16">
+            <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI" size="13" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="ID :"/>
+                <Property name="text" type="java.lang.String" value="ID"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -488,12 +483,12 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="17" max="32767" attributes="0"/>
+                      <EmptySpace pref="11" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="correctionCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="submitButton" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -507,7 +502,7 @@
             </Component>
             <Component class="gui.basic.components.ActionButton" name="submitButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Submit"/>
+                <Property name="text" type="java.lang.String" value="Update"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submitButtonActionPerformed"/>
@@ -529,10 +524,7 @@
                               <Component id="zonalCheckBox" min="-2" pref="167" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="drawerCombo" alignment="1" min="-2" pref="186" max="-2" attributes="0"/>
-                                  <Component id="fileNoCombo" alignment="1" min="-2" pref="186" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="drawerCombo" min="-2" pref="186" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="availableButton" min="-2" pref="148" max="-2" attributes="0"/>
@@ -574,10 +566,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel15" min="-2" pref="24" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="addFileButton" alignment="1" pref="30" max="32767" attributes="0"/>
-                          <Component id="fileNoCombo" alignment="1" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="addFileButton" min="-2" pref="30" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -619,8 +608,6 @@
                 <Property name="text" type="java.lang.String" value="Zonal Letter"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundCombo" name="fileNoCombo">
-            </Component>
             <Component class="gui.basic.components.RoundButton" name="addFileButton">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Add File"/>
@@ -641,15 +628,43 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="submitButton1" min="-2" pref="188" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="statusCombo" min="-2" pref="244" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="60" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="statusCombo" alignment="1" max="32767" attributes="0"/>
+                          <Component id="submitButton1" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="11" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="gui.basic.components.ActionButton" name="submitButton1">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Remove"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submitButton1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="gui.basic.components.RoundCombo" name="statusCombo">
+            </Component>
+          </SubComponents>
         </Container>
         <Container class="gui.basic.panel.ComponentPanel" name="componentPanel5">
 

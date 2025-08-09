@@ -33,22 +33,18 @@ public class AttendanceMaking extends javax.swing.JPanel {
         componentPanel6 = new gui.basic.panel.ComponentPanel();
         jLabel14 = new javax.swing.JLabel();
         equipmentIdLabel = new javax.swing.JLabel();
-        dawerCombo = new gui.basic.components.RoundCombo();
-        drawerButton = new gui.basic.components.RoundButton();
-        invoiceCheckBox = new javax.swing.JCheckBox();
         resetButton = new gui.basic.components.RoundButton();
+        markButton = new gui.basic.components.RoundButton();
 
         namesPanel.setLayout(new java.awt.GridLayout(10, 3));
 
         jLabel14.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
-        jLabel14.setText("Equipment ID :");
+        jLabel14.setText("Class  :");
 
         equipmentIdLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 13)); // NOI18N
-        equipmentIdLabel.setText("     1254684 atuto generated");
+        equipmentIdLabel.setText("   atuto generated");
 
-        drawerButton.setText("Available Drawer");
-
-        invoiceCheckBox.setText("Invoice");
+        resetButton.setText("Reset");
 
         javax.swing.GroupLayout componentPanel6Layout = new javax.swing.GroupLayout(componentPanel6);
         componentPanel6.setLayout(componentPanel6Layout);
@@ -59,13 +55,9 @@ public class AttendanceMaking extends javax.swing.JPanel {
                 .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(equipmentIdLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dawerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(drawerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(invoiceCheckBox, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(276, 276, 276))
+                .addGap(721, 721, 721)
+                .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
         );
         componentPanel6Layout.setVerticalGroup(
             componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -74,13 +66,11 @@ public class AttendanceMaking extends javax.swing.JPanel {
                 .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(equipmentIdLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(dawerCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(drawerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(invoiceCheckBox))
+                    .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        resetButton.setText("Mark");
+        markButton.setText("Mark");
 
         javax.swing.GroupLayout basePanel1Layout = new javax.swing.GroupLayout(basePanel1);
         basePanel1.setLayout(basePanel1Layout);
@@ -88,28 +78,26 @@ public class AttendanceMaking extends javax.swing.JPanel {
             basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, basePanel1Layout.createSequentialGroup()
                 .addContainerGap(13, Short.MAX_VALUE)
-                .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, basePanel1Layout.createSequentialGroup()
-                        .addComponent(namesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(componentPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                        .addComponent(namesPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(markButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12))
+                    .addGroup(basePanel1Layout.createSequentialGroup()
+                        .addComponent(componentPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
         basePanel1Layout.setVerticalGroup(
             basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, basePanel1Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(componentPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(basePanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26))
-                    .addGroup(basePanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(namesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(35, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(namesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(markButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -128,11 +116,9 @@ public class AttendanceMaking extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private gui.basic.panel.basePanel basePanel1;
     private gui.basic.panel.ComponentPanel componentPanel6;
-    private gui.basic.components.RoundCombo dawerCombo;
-    private gui.basic.components.RoundButton drawerButton;
     private javax.swing.JLabel equipmentIdLabel;
-    private javax.swing.JCheckBox invoiceCheckBox;
     private javax.swing.JLabel jLabel14;
+    private gui.basic.components.RoundButton markButton;
     private gui.basic.panel.ComponentPanel namesPanel;
     private gui.basic.components.RoundButton resetButton;
     // End of variables declaration//GEN-END:variables

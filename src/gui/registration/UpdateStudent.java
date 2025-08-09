@@ -8,12 +8,12 @@ package gui.registration;
  *
  * @author savaa
  */
-public class TeacherRegistration extends javax.swing.JPanel {
+public class UpdateStudent extends javax.swing.JPanel {
 
     /**
      * Creates new form StudentRegistration
      */
-    public TeacherRegistration() {
+    public UpdateStudent() {
         initComponents();
     }
 
@@ -50,12 +50,12 @@ public class TeacherRegistration extends javax.swing.JPanel {
         landLineTextField = new gui.basic.components.RoundTextField();
         emailTextField = new gui.basic.components.RoundTextField();
         jLabel19 = new javax.swing.JLabel();
-        passwordTextField = new gui.basic.components.RoundTextField();
         jLabel20 = new javax.swing.JLabel();
+        classCombo = new gui.basic.components.RoundCombo();
         componentPanel6 = new gui.basic.panel.ComponentPanel();
         resetButton = new gui.basic.components.RoundButton();
-        idLabel = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        firstNameTextField1 = new gui.basic.components.RoundTextField();
+        jLabel6 = new javax.swing.JLabel();
         componentPanel7 = new gui.basic.panel.ComponentPanel();
         correctionCheckBox = new javax.swing.JCheckBox();
         submitButton = new gui.basic.components.ActionButton();
@@ -67,10 +67,11 @@ public class TeacherRegistration extends javax.swing.JPanel {
         birthCertificateCheckBox = new javax.swing.JCheckBox();
         AppointmentCheckBox = new javax.swing.JCheckBox();
         zonalCheckBox = new javax.swing.JCheckBox();
-        fileNoCombo = new gui.basic.components.RoundCombo();
         addFileButton = new gui.basic.components.RoundButton();
         jLabel15 = new javax.swing.JLabel();
         componentPanel8 = new gui.basic.panel.ComponentPanel();
+        submitButton1 = new gui.basic.components.ActionButton();
+        statusCombo = new gui.basic.components.RoundCombo();
         componentPanel5 = new gui.basic.panel.ComponentPanel();
         addPhotoButton = new gui.basic.components.RoundButton();
         imageLabel = new javax.swing.JLabel();
@@ -136,10 +137,8 @@ public class TeacherRegistration extends javax.swing.JPanel {
         jLabel19.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel19.setText("Email");
 
-        passwordTextField.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-
         jLabel20.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
-        jLabel20.setText("Password");
+        jLabel20.setText("Class");
 
         javax.swing.GroupLayout componentPanel1Layout = new javax.swing.GroupLayout(componentPanel1);
         componentPanel1.setLayout(componentPanel1Layout);
@@ -184,7 +183,6 @@ public class TeacherRegistration extends javax.swing.JPanel {
                         .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(AddressLine2TextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(landLineTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(passwordTextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(componentPanel1Layout.createSequentialGroup()
                                 .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -192,7 +190,8 @@ public class TeacherRegistration extends javax.swing.JPanel {
                                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(195, 195, 195)))))
+                                .addGap(195, 195, 195))
+                            .addComponent(classCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         componentPanel1Layout.setVerticalGroup(
@@ -245,7 +244,7 @@ public class TeacherRegistration extends javax.swing.JPanel {
                     .addGroup(componentPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(1, 1, 1)
-                        .addComponent(passwordTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(classCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(componentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -259,21 +258,25 @@ public class TeacherRegistration extends javax.swing.JPanel {
 
         resetButton.setText("Reset");
 
-        idLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 13)); // NOI18N
-        idLabel.setText("   atuto generated");
+        firstNameTextField1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        firstNameTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                firstNameTextField1ActionPerformed(evt);
+            }
+        });
 
-        jLabel16.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
-        jLabel16.setText("ID :");
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
+        jLabel6.setText("ID");
 
         javax.swing.GroupLayout componentPanel6Layout = new javax.swing.GroupLayout(componentPanel6);
         componentPanel6.setLayout(componentPanel6Layout);
         componentPanel6Layout.setHorizontalGroup(
             componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(componentPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jLabel6)
                 .addGap(18, 18, 18)
-                .addComponent(idLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(firstNameTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
@@ -281,20 +284,18 @@ public class TeacherRegistration extends javax.swing.JPanel {
         componentPanel6Layout.setVerticalGroup(
             componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(componentPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(idLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(8, 8, 8)
+                .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(firstNameTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         correctionCheckBox.setText("Above All Detatil Correct ");
         correctionCheckBox.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
 
-        submitButton.setText("Submit");
+        submitButton.setText("Update");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitButtonActionPerformed(evt);
@@ -315,11 +316,11 @@ public class TeacherRegistration extends javax.swing.JPanel {
         componentPanel7Layout.setVerticalGroup(
             componentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, componentPanel7Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
+                .addContainerGap(11, Short.MAX_VALUE)
                 .addGroup(componentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(correctionCheckBox)
                     .addComponent(submitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addGap(12, 12, 12))
         );
 
         availableButton.setText("Available Drawer");
@@ -352,9 +353,7 @@ public class TeacherRegistration extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addComponent(zonalCheckBox, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(componentPanel4Layout.createSequentialGroup()
-                        .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(drawerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fileNoCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(drawerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(availableButton, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -387,21 +386,37 @@ public class TeacherRegistration extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(addFileButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addComponent(fileNoCombo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(addFileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30))
         );
+
+        submitButton1.setBackground(new java.awt.Color(204, 204, 204));
+        submitButton1.setText("Remove");
+        submitButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout componentPanel8Layout = new javax.swing.GroupLayout(componentPanel8);
         componentPanel8.setLayout(componentPanel8Layout);
         componentPanel8Layout.setHorizontalGroup(
             componentPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(componentPanel8Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(submitButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(statusCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
         componentPanel8Layout.setVerticalGroup(
             componentPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGroup(componentPanel8Layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addGroup(componentPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(statusCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(submitButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         addPhotoButton.setText("Add Photo");
@@ -481,7 +496,7 @@ public class TeacherRegistration extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(basePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 625, Short.MAX_VALUE)
+            .addComponent(basePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 625, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -497,6 +512,14 @@ public class TeacherRegistration extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_submitButtonActionPerformed
 
+    private void submitButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_submitButton1ActionPerformed
+
+    private void firstNameTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_firstNameTextField1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private gui.basic.components.RoundTextField AddressLine1TextField;
@@ -507,6 +530,7 @@ public class TeacherRegistration extends javax.swing.JPanel {
     private gui.basic.components.RoundButton availableButton;
     private gui.basic.panel.basePanel basePanel1;
     private javax.swing.JCheckBox birthCertificateCheckBox;
+    private gui.basic.components.RoundCombo classCombo;
     private gui.basic.panel.ComponentPanel componentPanel1;
     private gui.basic.panel.ComponentPanel componentPanel4;
     private gui.basic.panel.ComponentPanel componentPanel5;
@@ -518,16 +542,14 @@ public class TeacherRegistration extends javax.swing.JPanel {
     private gui.basic.components.RoundCombo drawerCombo;
     private gui.basic.components.RoundTextField emailTextField;
     private gui.basic.components.RoundTextField enrollDateTextField;
-    private gui.basic.components.RoundCombo fileNoCombo;
     private gui.basic.components.RoundTextField firstNameTextField;
+    private gui.basic.components.RoundTextField firstNameTextField1;
     private gui.basic.components.RoundCombo genderCombo;
-    private javax.swing.JLabel idLabel;
     private javax.swing.JLabel imageLabel;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
@@ -535,6 +557,7 @@ public class TeacherRegistration extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -542,10 +565,11 @@ public class TeacherRegistration extends javax.swing.JPanel {
     private gui.basic.components.RoundTextField lastNameTextField;
     private gui.basic.components.RoundTextField mobileTextField;
     private gui.basic.components.RoundTextField nicTextField;
-    private gui.basic.components.RoundTextField passwordTextField;
     private gui.basic.components.RoundButton resetButton;
     private javax.swing.JCheckBox residentialCheckBox;
+    private gui.basic.components.RoundCombo statusCombo;
     private gui.basic.components.ActionButton submitButton;
+    private gui.basic.components.ActionButton submitButton1;
     private javax.swing.JCheckBox zonalCheckBox;
     // End of variables declaration//GEN-END:variables
 }

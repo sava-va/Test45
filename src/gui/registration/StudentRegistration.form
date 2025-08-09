@@ -16,12 +16,12 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="basePanel1" alignment="0" max="32767" attributes="0"/>
+          <Component id="basePanel1" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="basePanel1" alignment="0" max="32767" attributes="0"/>
+          <Component id="basePanel1" alignment="0" pref="625" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -31,63 +31,52 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="componentPanel6" alignment="0" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="componentPanel6" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="componentPanel5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="componentPanel2" min="-2" max="-2" attributes="0"/>
-                              </Group>
                               <Component id="componentPanel1" min="-2" max="-2" attributes="0"/>
+                              <Component id="componentPanel8" max="32767" attributes="0"/>
                           </Group>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                  <Component id="componentPanel3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="componentPanel4" min="-2" max="-2" attributes="0"/>
-                                      <Component id="componentPanel7" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                              <Component id="componentPanel7" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="componentPanel5" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="componentPanel4" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
+                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="componentPanel6" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="componentPanel3" max="32767" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Component id="componentPanel4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="componentPanel7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="componentPanel5" max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="componentPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="componentPanel5" min="-2" max="-2" attributes="0"/>
-                              <Component id="componentPanel2" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="componentPanel1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="componentPanel7" min="-2" max="-2" attributes="0"/>
+                      <Component id="componentPanel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -98,50 +87,72 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                  <Component id="FirstNameTextField" min="-2" pref="375" max="-2" attributes="0"/>
+                                  <Component id="firstNameTextField" min="-2" pref="374" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="roundTextField3" min="-2" pref="330" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="enrollDateTextField" alignment="0" pref="349" max="32767" attributes="0"/>
+                                      <Component id="lastNameTextField" max="32767" attributes="0"/>
+                                      <Component id="nicTextField" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
                                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="roundTextField5" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="roundTextField7" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jDateChooser1" max="32767" attributes="0"/>
-                                  <Component id="roundCombo1" alignment="1" max="32767" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel4" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
-                                          <Component id="jLabel8" alignment="0" min="-2" pref="113" max="-2" attributes="0"/>
-                                          <Component id="jLabel10" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
-                                          <Component id="jLabel6" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
+                                          <Component id="jLabel11" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
+                                          <Component id="jLabel19" min="-2" pref="81" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <EmptySpace min="-2" pref="311" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel4" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
+                                              <Component id="jLabel8" alignment="0" min="-2" pref="113" max="-2" attributes="0"/>
+                                              <Component id="jLabel10" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="AddressLine1TextField" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="emailTextField" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="mobileTextField" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="genderCombo" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="dobDateChooser" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="roundTextField4" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
-                                  <Component id="roundTextField6" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
-                                  <Component id="roundTextField8" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
-                                  <Component id="jLabel9" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
-                                  <Component id="jLabel11" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
-                                  <Component id="roundTextField10" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" alignment="0" min="-2" pref="154" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="AddressLine2TextField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="landLineTextField" alignment="1" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel5" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
+                                          <Component id="jLabel9" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                                          <Component id="jLabel7" alignment="0" min="-2" pref="154" max="-2" attributes="0"/>
+                                          <Component id="jLabel18" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
+                                          <Component id="jLabel20" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="195" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="drawerCombo1" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -153,12 +164,12 @@
                           <Group type="102" attributes="0">
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="FirstNameTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="firstNameTextField" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="roundTextField3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="lastNameTextField" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -166,50 +177,61 @@
                           <Group type="102" attributes="0">
                               <Component id="jLabel4" min="-2" pref="24" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jDateChooser1" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="dobDateChooser" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="jLabel5" min="-2" pref="24" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="roundTextField4" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="enrollDateTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel7" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="jLabel10" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nicTextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="genderCombo" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel11" min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="mobileTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel18" min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="landLineTextField" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel6" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="roundTextField5" min="-2" pref="30" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel10" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel19" min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="emailTextField" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel7" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="roundTextField6" min="-2" pref="30" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel11" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="roundTextField10" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="roundCombo1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel20" min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="drawerCombo1" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel8" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="roundTextField7" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel9" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="roundTextField8" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel9" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="jLabel8" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="AddressLine2TextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="AddressLine1TextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="39" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -223,14 +245,14 @@
                 <Property name="text" type="java.lang.String" value="First Name"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundTextField" name="FirstNameTextField">
+            <Component class="gui.basic.components.RoundTextField" name="firstNameTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FirstNameTextFieldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="firstNameTextFieldActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
@@ -241,14 +263,14 @@
                 <Property name="text" type="java.lang.String" value="Date of Birth"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField3">
+            <Component class="gui.basic.components.RoundTextField" name="lastNameTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundTextField3ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lastNameTextFieldActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel3">
@@ -259,7 +281,7 @@
                 <Property name="text" type="java.lang.String" value="Last Name"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField4">
+            <Component class="gui.basic.components.RoundTextField" name="enrollDateTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
@@ -274,22 +296,7 @@
                 <Property name="text" type="java.lang.String" value="Enroll Date "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel6">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI" size="13" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Birth Cetificate No"/>
-              </Properties>
-            </Component>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField5">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField6">
+            <Component class="gui.basic.components.RoundTextField" name="nicTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
@@ -312,7 +319,7 @@
                 <Property name="text" type="java.lang.String" value="Address Fist Line"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField7">
+            <Component class="gui.basic.components.RoundTextField" name="AddressLine1TextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
@@ -327,7 +334,7 @@
                 <Property name="text" type="java.lang.String" value="Addresss Second Line"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField8">
+            <Component class="gui.basic.components.RoundTextField" name="AddressLine2TextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
@@ -350,334 +357,56 @@
                 <Property name="text" type="java.lang.String" value="Mobile"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField10">
+            <Component class="gui.basic.components.RoundTextField" name="mobileTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
+            <Component class="com.toedter.calendar.JDateChooser" name="dobDateChooser">
             </Component>
-            <Component class="gui.basic.components.RoundCombo" name="roundCombo1">
-            </Component>
-          </SubComponents>
-        </Container>
-        <Container class="gui.basic.panel.ComponentPanel" name="componentPanel2">
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="roundTextField13" min="-2" pref="191" max="-2" attributes="0"/>
-                          <Component id="jLabel12" min="-2" pref="102" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="roundButton1" min="-2" pref="154" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel12" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="roundTextField13" min="-2" pref="30" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
-                              <Component id="roundButton1" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="gui.basic.components.RoundButton" name="roundButton1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Pay"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundButton1ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel12">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI" size="13" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Enrollment Fee"/>
-              </Properties>
-            </Component>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField13">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Auto Genarated"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI" size="14" style="0"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundTextField13ActionPerformed"/>
-              </Events>
-            </Component>
-          </SubComponents>
-        </Container>
-        <Container class="gui.basic.panel.ComponentPanel" name="componentPanel3">
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="4" max="32767" attributes="0"/>
-                              <Component id="jCheckBox1" min="-2" pref="167" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jCheckBox2" min="-2" pref="167" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="roundCombo3" min="-2" pref="186" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="roundButton2" min="-2" pref="148" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="roundCombo5" min="-2" pref="186" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="roundButton6" min="-2" pref="148" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="jLabel13" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
-                                  <Component id="jLabel18" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jCheckBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jLabel18" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="roundCombo3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="roundButton2" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="17" max="32767" attributes="0"/>
-                      <Component id="jLabel13" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="roundCombo5" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="roundButton6" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="gui.basic.components.RoundButton" name="roundButton2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Available Drawer"/>
-              </Properties>
-            </Component>
-            <Component class="gui.basic.components.RoundCombo" name="roundCombo3">
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel13">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI" size="13" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="File No"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="jCheckBox1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Residential Cetificate"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="jCheckBox2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Brith Cetificate"/>
-              </Properties>
-            </Component>
-            <Component class="gui.basic.components.RoundCombo" name="roundCombo5">
-            </Component>
-            <Component class="gui.basic.components.RoundButton" name="roundButton6">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Add File"/>
-              </Properties>
+            <Component class="gui.basic.components.RoundCombo" name="genderCombo">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel18">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI" size="13" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Drawer No"/>
+                <Property name="text" type="java.lang.String" value="Land Line"/>
               </Properties>
             </Component>
-          </SubComponents>
-        </Container>
-        <Container class="gui.basic.panel.ComponentPanel" name="componentPanel4">
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="roundTextField11" min="-2" pref="193" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="roundButton4" pref="148" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="roundTextField12" alignment="0" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel17" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
-                                  <Component id="jLabel23" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                      <Component id="jLabel17" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="roundTextField11" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="roundButton4" alignment="3" pref="30" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel23" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="roundTextField12" min="-2" pref="30" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField11">
+            <Component class="gui.basic.components.RoundTextField" name="landLineTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel17">
+            <Component class="gui.basic.components.RoundTextField" name="emailTextField">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel19">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI" size="13" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Gurdient NIC"/>
+                <Property name="text" type="java.lang.String" value="Email"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.RoundTextField" name="roundTextField12">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Auto Genarated"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI" size="14" style="0"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundTextField12ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel23">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI" size="13" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Gurdient Name"/>
-              </Properties>
-            </Component>
-            <Component class="gui.basic.components.RoundButton" name="roundButton4">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Check"/>
-              </Properties>
-            </Component>
-          </SubComponents>
-        </Container>
-        <Container class="gui.basic.panel.ComponentPanel" name="componentPanel5">
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="roundCombo4" alignment="1" min="-2" pref="186" max="-2" attributes="0"/>
-                          <Component id="jLabel15" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="roundButton3" min="-2" pref="154" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
-                              <Component id="roundButton3" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel15" min="-2" pref="24" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="roundCombo4" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="gui.basic.components.RoundButton" name="roundButton3">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Available Class"/>
-              </Properties>
-            </Component>
-            <Component class="gui.basic.components.RoundCombo" name="roundCombo4">
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel15">
+            <Component class="javax.swing.JLabel" name="jLabel20">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic UI" size="13" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Class"/>
               </Properties>
+            </Component>
+            <Component class="gui.basic.components.RoundCombo" name="drawerCombo1">
             </Component>
           </SubComponents>
         </Container>
@@ -688,11 +417,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel14" max="32767" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel16" min="-2" pref="188" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="720" max="-2" attributes="0"/>
-                      <Component id="roundButton5" min="-2" pref="154" max="-2" attributes="0"/>
+                      <Component id="jLabel16" min="-2" pref="32" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="idLabel" min="-2" pref="188" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="resetButton" min="-2" pref="154" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -701,10 +430,12 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel14" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="jLabel16" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="roundButton5" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="jLabel16" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                              <Component id="idLabel" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="resetButton" min="-2" pref="34" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -712,25 +443,25 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel14">
+            <Component class="gui.basic.components.RoundButton" name="resetButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Reset"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="idLabel">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI" size="13" style="0"/>
+                  <Font name="Yu Gothic UI" size="13" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Student ID :"/>
+                <Property name="text" type="java.lang.String" value="   atuto generated"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel16">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI" size="13" style="1"/>
+                  <Font name="Yu Gothic UI" size="13" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="     1254684"/>
-              </Properties>
-            </Component>
-            <Component class="gui.basic.components.RoundButton" name="roundButton5">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Reset"/>
+                <Property name="text" type="java.lang.String" value="ID :"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -742,9 +473,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jCheckBox3" min="-2" max="-2" attributes="0"/>
+                      <Component id="correctionCheckBox" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="actionButton1" min="-2" pref="188" max="-2" attributes="0"/>
+                      <Component id="submitButton" min="-2" pref="188" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -752,26 +483,216 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="56" max="32767" attributes="0"/>
+                      <EmptySpace pref="17" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jCheckBox3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="actionButton1" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                          <Component id="correctionCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="submitButton" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JCheckBox" name="jCheckBox3">
+            <Component class="javax.swing.JCheckBox" name="correctionCheckBox">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Above All Detatil Correct "/>
                 <Property name="horizontalAlignment" type="int" value="11"/>
               </Properties>
             </Component>
-            <Component class="gui.basic.components.ActionButton" name="actionButton1">
+            <Component class="gui.basic.components.ActionButton" name="submitButton">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submitButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="gui.basic.panel.ComponentPanel" name="componentPanel4">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="AppointmentCheckBox" min="-2" pref="167" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="zonalCheckBox" min="-2" pref="167" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="drawerCombo" alignment="1" min="-2" pref="186" max="-2" attributes="0"/>
+                                  <Component id="fileNoCombo" alignment="1" min="-2" pref="186" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="availableButton" min="-2" pref="148" max="-2" attributes="0"/>
+                                  <Component id="addFileButton" min="-2" pref="148" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="residentialCheckBox" min="-2" pref="167" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="birthCertificateCheckBox" min="-2" pref="167" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabel14" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
+                          <Component id="jLabel15" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="residentialCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="birthCertificateCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="AppointmentCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="zonalCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="32767" attributes="0"/>
+                      <Component id="jLabel14" min="-2" pref="24" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="availableButton" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="drawerCombo" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel15" min="-2" pref="24" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="addFileButton" alignment="1" pref="30" max="32767" attributes="0"/>
+                          <Component id="fileNoCombo" alignment="1" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="gui.basic.components.RoundButton" name="availableButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Available Drawer"/>
+              </Properties>
+            </Component>
+            <Component class="gui.basic.components.RoundCombo" name="drawerCombo">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel14">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Yu Gothic UI" size="13" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Drawer No"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="residentialCheckBox">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Residential Cetificate"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="birthCertificateCheckBox">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Brith Cetificate"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="AppointmentCheckBox">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Appoinment Letter"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="zonalCheckBox">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Zonal Letter"/>
+              </Properties>
+            </Component>
+            <Component class="gui.basic.components.RoundCombo" name="fileNoCombo">
+            </Component>
+            <Component class="gui.basic.components.RoundButton" name="addFileButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Add File"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel15">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Yu Gothic UI" size="13" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="File No"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="gui.basic.panel.ComponentPanel" name="componentPanel8">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="60" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Container class="gui.basic.panel.ComponentPanel" name="componentPanel5">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="imageLabel" min="-2" pref="194" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="addPhotoButton" min="-2" pref="125" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="addPhotoButton" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="imageLabel" min="-2" pref="145" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="gui.basic.components.RoundButton" name="addPhotoButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Add Photo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="imageLabel">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Yu Gothic UI" size="13" style="0"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="image"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
               </Properties>
             </Component>
           </SubComponents>

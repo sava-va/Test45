@@ -52,9 +52,10 @@ public class AdminRegistration extends javax.swing.JPanel {
         jLabel19 = new javax.swing.JLabel();
         passwordTextField = new gui.basic.components.RoundTextField();
         jLabel20 = new javax.swing.JLabel();
-        componentPanel3 = new gui.basic.panel.ComponentPanel();
         componentPanel6 = new gui.basic.panel.ComponentPanel();
         resetButton = new gui.basic.components.RoundButton();
+        idLabel = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
         componentPanel7 = new gui.basic.panel.ComponentPanel();
         correctionCheckBox = new javax.swing.JCheckBox();
         submitButton = new gui.basic.components.ActionButton();
@@ -70,6 +71,9 @@ public class AdminRegistration extends javax.swing.JPanel {
         addFileButton = new gui.basic.components.RoundButton();
         jLabel15 = new javax.swing.JLabel();
         componentPanel8 = new gui.basic.panel.ComponentPanel();
+        componentPanel5 = new gui.basic.panel.ComponentPanel();
+        addPhotoButton = new gui.basic.components.RoundButton();
+        imageLabel = new javax.swing.JLabel();
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel2.setText("First Name");
@@ -253,25 +257,24 @@ public class AdminRegistration extends javax.swing.JPanel {
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout componentPanel3Layout = new javax.swing.GroupLayout(componentPanel3);
-        componentPanel3.setLayout(componentPanel3Layout);
-        componentPanel3Layout.setHorizontalGroup(
-            componentPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 376, Short.MAX_VALUE)
-        );
-        componentPanel3Layout.setVerticalGroup(
-            componentPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 210, Short.MAX_VALUE)
-        );
-
         resetButton.setText("Reset");
+
+        idLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 13)); // NOI18N
+        idLabel.setText("   atuto generated");
+
+        jLabel16.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
+        jLabel16.setText("ID :");
 
         javax.swing.GroupLayout componentPanel6Layout = new javax.swing.GroupLayout(componentPanel6);
         componentPanel6.setLayout(componentPanel6Layout);
         componentPanel6Layout.setHorizontalGroup(
             componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(componentPanel6Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(idLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
         );
@@ -279,7 +282,11 @@ public class AdminRegistration extends javax.swing.JPanel {
             componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(componentPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(componentPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(idLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -307,7 +314,7 @@ public class AdminRegistration extends javax.swing.JPanel {
         componentPanel7Layout.setVerticalGroup(
             componentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, componentPanel7Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(17, Short.MAX_VALUE)
                 .addGroup(componentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(correctionCheckBox)
                     .addComponent(submitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -347,7 +354,7 @@ public class AdminRegistration extends javax.swing.JPanel {
                         .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(drawerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(fileNoCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(availableButton, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(addFileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -362,7 +369,7 @@ public class AdminRegistration extends javax.swing.JPanel {
         componentPanel4Layout.setVerticalGroup(
             componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(componentPanel4Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(15, 15, 15)
                 .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(residentialCheckBox)
                     .addComponent(birthCertificateCheckBox))
@@ -382,7 +389,7 @@ public class AdminRegistration extends javax.swing.JPanel {
                 .addGroup(componentPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(addFileButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
                     .addComponent(fileNoCombo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                .addGap(30, 30, 30))
         );
 
         javax.swing.GroupLayout componentPanel8Layout = new javax.swing.GroupLayout(componentPanel8);
@@ -396,6 +403,34 @@ public class AdminRegistration extends javax.swing.JPanel {
             .addGap(0, 60, Short.MAX_VALUE)
         );
 
+        addPhotoButton.setText("Add Photo");
+
+        imageLabel.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
+        imageLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imageLabel.setText("image");
+        imageLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+
+        javax.swing.GroupLayout componentPanel5Layout = new javax.swing.GroupLayout(componentPanel5);
+        componentPanel5.setLayout(componentPanel5Layout);
+        componentPanel5Layout.setHorizontalGroup(
+            componentPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, componentPanel5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(imageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(addPhotoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17))
+        );
+        componentPanel5Layout.setVerticalGroup(
+            componentPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(componentPanel5Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(componentPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(addPhotoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout basePanel1Layout = new javax.swing.GroupLayout(basePanel1);
         basePanel1.setLayout(basePanel1Layout);
         basePanel1Layout.setHorizontalGroup(
@@ -405,7 +440,7 @@ public class AdminRegistration extends javax.swing.JPanel {
                 .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(basePanel1Layout.createSequentialGroup()
                         .addComponent(componentPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
+                        .addGap(21, 21, 21))
                     .addGroup(basePanel1Layout.createSequentialGroup()
                         .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(componentPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -413,9 +448,10 @@ public class AdminRegistration extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(componentPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(componentPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(componentPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(30, 30, 30))))
+                            .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(componentPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(componentPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(14, 14, 14))))
         );
         basePanel1Layout.setVerticalGroup(
             basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -424,16 +460,16 @@ public class AdminRegistration extends javax.swing.JPanel {
                 .addComponent(componentPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(basePanel1Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, basePanel1Layout.createSequentialGroup()
                         .addComponent(componentPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(componentPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(componentPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(componentPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(basePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(componentPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(componentPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(componentPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(64, 64, 64))
+                .addGap(55, 55, 55))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -466,12 +502,13 @@ public class AdminRegistration extends javax.swing.JPanel {
     private gui.basic.components.RoundTextField AddressLine2TextField;
     private javax.swing.JCheckBox AppointmentCheckBox;
     private gui.basic.components.RoundButton addFileButton;
+    private gui.basic.components.RoundButton addPhotoButton;
     private gui.basic.components.RoundButton availableButton;
     private gui.basic.panel.basePanel basePanel1;
     private javax.swing.JCheckBox birthCertificateCheckBox;
     private gui.basic.panel.ComponentPanel componentPanel1;
-    private gui.basic.panel.ComponentPanel componentPanel3;
     private gui.basic.panel.ComponentPanel componentPanel4;
+    private gui.basic.panel.ComponentPanel componentPanel5;
     private gui.basic.panel.ComponentPanel componentPanel6;
     private gui.basic.panel.ComponentPanel componentPanel7;
     private gui.basic.panel.ComponentPanel componentPanel8;
@@ -483,10 +520,13 @@ public class AdminRegistration extends javax.swing.JPanel {
     private gui.basic.components.RoundCombo fileNoCombo;
     private gui.basic.components.RoundTextField firstNameTextField;
     private gui.basic.components.RoundCombo genderCombo;
+    private javax.swing.JLabel idLabel;
+    private javax.swing.JLabel imageLabel;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
