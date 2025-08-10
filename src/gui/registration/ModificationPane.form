@@ -38,26 +38,6 @@
     <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="gui.registration.UpdateOfficers" name="updateOfficers1">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Officer Modifcation">
-                <Property name="tabTitle" type="java.lang.String" value="Officer Modifcation"/>
-              </JTabbedPaneConstraints>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="gui.registration.UpdateStudent" name="updateStudent1">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Student Modifcation">
-                <Property name="tabTitle" type="java.lang.String" value="Student Modifcation"/>
-              </JTabbedPaneConstraints>
-            </Constraint>
-          </Constraints>
-        </Component>
-      </SubComponents>
     </Container>
   </SubComponents>
 </Form>

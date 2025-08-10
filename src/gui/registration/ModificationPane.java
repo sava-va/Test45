@@ -15,9 +15,19 @@ public class ModificationPane extends javax.swing.JPanel {
      */
     public ModificationPane() {
         initComponents();
+        initiatePanels();
     }
 
-    
+    private void initiatePanels() {
+
+        jTabbedPane1.add(new OfficerModification(), "Admin Modification",0);
+        jTabbedPane1.add(new OfficerModification(), "Principle Modification",1);
+        jTabbedPane1.add(new OfficerModification(), "Teacher Modification",2);
+        jTabbedPane1.add(new OfficerModification(), "Gurdient Modification",3);
+        jTabbedPane1.add(new StudentModification(), "Student Modification",4);
+
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -29,13 +39,8 @@ public class ModificationPane extends javax.swing.JPanel {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        updateOfficers1 = new gui.registration.UpdateOfficers();
-        updateStudent1 = new gui.registration.UpdateStudent();
 
         setPreferredSize(new java.awt.Dimension(1180, 625));
-
-        jTabbedPane1.addTab("Officer Modifcation", updateOfficers1);
-        jTabbedPane1.addTab("Student Modifcation", updateStudent1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -43,7 +48,7 @@ public class ModificationPane extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1173, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1173, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -55,7 +60,5 @@ public class ModificationPane extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane jTabbedPane1;
-    private gui.registration.UpdateOfficers updateOfficers1;
-    private gui.registration.UpdateStudent updateStudent1;
     // End of variables declaration//GEN-END:variables
 }
