@@ -4,7 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/sava/Documents/NetBeansProjects/Test45/src/gui/registration/GurdientRegistration.java</file>
-            <file>file:/C:/Users/sava/Documents/NetBeansProjects/Test45/src/gui/registration/AdminRegistration.java</file>
+            <file>file:/C:/Users/sava/Documents/NetBeansProjects/Test45/src/gui/home/AdminHome.java</file>
+            <file>file:/C:/Users/sava/Documents/NetBeansProjects/Test45/src/gui/registration/RegistrationPane.java</file>
+            <file>file:/C:/Users/sava/Documents/NetBeansProjects/Test45/src/gui/home/PrincipleHome.java</file>
         </group>
     </open-files>
 </project-private>

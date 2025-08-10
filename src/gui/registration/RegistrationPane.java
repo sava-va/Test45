@@ -15,9 +15,14 @@ public class RegistrationPane extends javax.swing.JPanel {
      */
     public RegistrationPane() {
         initComponents();
+        initiatePanels();
     }
 
-    
+    private void initiatePanels() {
+
+        jTabbedPane1.add(new GurdientRegistration(), "Gurdient Registration",0);
+
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -29,19 +34,8 @@ public class RegistrationPane extends javax.swing.JPanel {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        gurdientRegistration1 = new gui.registration.GurdientRegistration();
-        principleRegistration1 = new gui.registration.PrincipleRegistration();
-        teacherRegistration1 = new gui.registration.TeacherRegistration();
-        gurdientRegistration2 = new gui.registration.GurdientRegistration();
-        studentRegistration1 = new gui.registration.StudentRegistration();
 
         setPreferredSize(new java.awt.Dimension(1180, 625));
-
-        jTabbedPane1.addTab("Admin Registration", gurdientRegistration1);
-        jTabbedPane1.addTab("Principle Registration", principleRegistration1);
-        jTabbedPane1.addTab("Teacher Registration", teacherRegistration1);
-        jTabbedPane1.addTab("Gurdient Registration", gurdientRegistration2);
-        jTabbedPane1.addTab("Student Registration", studentRegistration1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -49,7 +43,7 @@ public class RegistrationPane extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1173, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1173, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -60,11 +54,6 @@ public class RegistrationPane extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private gui.registration.GurdientRegistration gurdientRegistration1;
-    private gui.registration.GurdientRegistration gurdientRegistration2;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private gui.registration.PrincipleRegistration principleRegistration1;
-    private gui.registration.StudentRegistration studentRegistration1;
-    private gui.registration.TeacherRegistration teacherRegistration1;
     // End of variables declaration//GEN-END:variables
 }

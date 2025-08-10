@@ -6,6 +6,7 @@ package gui.home;
 
 import gui.dashboard.panel.AdminDashboardPanel;
 import com.formdev.flatlaf.FlatLightLaf;
+import gui.registration.usertracks.GraphsPanel;
 import java.awt.CardLayout;
 import javax.swing.JFrame;
 
@@ -15,8 +16,9 @@ import javax.swing.JFrame;
  */
 public class PrincipleHome extends JFrame {
 
-    private AdminDashboardPanel dashboardPanel;
     private CardLayout contentPanelLayout;
+    private AdminDashboardPanel dashboardPanel;
+    private GraphsPanel enrollmentPanel;
     
     
     public PrincipleHome() {
@@ -28,13 +30,14 @@ public class PrincipleHome extends JFrame {
     private void setPanels() {
          if (contentPanelLayout == null && contentPanel.getLayout() instanceof CardLayout) {
             this.contentPanelLayout = (CardLayout) contentPanel.getLayout();
-        }
         
-        this.dashboardPanel = new AdminDashboardPanel();
-        
+        this.dashboardPanel = new AdminDashboardPanel();       
         this.contentPanel.add(dashboardPanel, "dashboard_panel");
+        this.enrollmentPanel = new GraphsPanel();       
+        this.contentPanel.add(enrollmentPanel, "Enrollment_panel");
         
         contentPanelLayout.show(contentPanel, "dashboard_panel");
+        }
     }
 
     /**
@@ -52,6 +55,7 @@ public class PrincipleHome extends JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         sidePannel1 = new gui.home.SidePannel();
+        dashboardButton = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -89,7 +93,17 @@ public class PrincipleHome extends JFrame {
                 .addGap(27, 27, 27))
         );
 
-        jLabel3.setText("jLabel3");
+        dashboardButton.setText("User Enrollment");
+        dashboardButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dashboardButtonActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setBackground(new java.awt.Color(232, 232, 232));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel3.setText("   User");
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
         javax.swing.GroupLayout sidePannel1Layout = new javax.swing.GroupLayout(sidePannel1);
         sidePannel1.setLayout(sidePannel1Layout);
@@ -97,14 +111,21 @@ public class PrincipleHome extends JFrame {
             sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sidePannel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
+                .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(sidePannel1Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(dashboardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         sidePannel1Layout.setVerticalGroup(
             sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sidePannel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addContainerGap()
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dashboardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -136,6 +157,10 @@ public class PrincipleHome extends JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void dashboardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardButtonActionPerformed
+        contentPanelLayout.show(contentPanel, "Enrollment_panel");
+    }//GEN-LAST:event_dashboardButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -152,6 +177,7 @@ public class PrincipleHome extends JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private gui.home.ContainerPannel contentPanel;
+    private javax.swing.JButton dashboardButton;
     private gui.home.HeadPanel headPanel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

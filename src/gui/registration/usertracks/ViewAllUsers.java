@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package gui.registration.traks;
+package gui.registration.usertracks;
 
 import gui.registration.*;
 
@@ -333,7 +333,6 @@ public class ViewAllUsers extends javax.swing.JPanel {
     private gui.basic.components.RoundCombo idCombo;
     private javax.swing.JLabel imageLabel;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private gui.basic.components.RoundTextField nameTextField;
     private gui.basic.components.RoundButton resetButton;
