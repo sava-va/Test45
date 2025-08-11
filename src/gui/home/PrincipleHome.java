@@ -4,23 +4,27 @@
  */
 package gui.home;
 
-import gui.dashboard.panel.AdminDashboardPanel;
 import com.formdev.flatlaf.FlatLightLaf;
+import gui.dashboard.panel.AdminDashboardPanel;
+import gui.registration.ModificationPane;
+import gui.registration.RegistrationPane;
 import gui.registration.usertracks.GraphsPanel;
 import java.awt.CardLayout;
 import javax.swing.JFrame;
 
 /**
  *
- * @author TeamNextOra
+ * @author sava
  */
-public class PrincipleHome extends JFrame {
+public class PrincipleHome extends javax.swing.JFrame {
 
     private CardLayout contentPanelLayout;
     private AdminDashboardPanel dashboardPanel;
     private GraphsPanel enrollmentPanel;
-    
-    
+
+    /**
+     * Creates new form AdminHome
+     */
     public PrincipleHome() {
         initComponents();
         setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -28,15 +32,16 @@ public class PrincipleHome extends JFrame {
     }
 
     private void setPanels() {
-         if (contentPanelLayout == null && contentPanel.getLayout() instanceof CardLayout) {
+        if (contentPanelLayout == null && contentPanel.getLayout() instanceof CardLayout) {
             this.contentPanelLayout = (CardLayout) contentPanel.getLayout();
-        
-        this.dashboardPanel = new AdminDashboardPanel();       
-        this.contentPanel.add(dashboardPanel, "dashboard_panel");
-        this.enrollmentPanel = new GraphsPanel();       
-        this.contentPanel.add(enrollmentPanel, "Enrollment_panel");
-        
-        contentPanelLayout.show(contentPanel, "dashboard_panel");
+
+            this.dashboardPanel = new AdminDashboardPanel();
+            this.contentPanel.add(dashboardPanel, "dashboard_panel");
+            this.enrollmentPanel = new GraphsPanel();
+            this.contentPanel.add(enrollmentPanel, "Enrollment_panel");
+
+
+            contentPanelLayout.show(contentPanel, "dashboard_panel");
         }
     }
 
@@ -50,21 +55,24 @@ public class PrincipleHome extends JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        contentPanel = new gui.home.ContainerPannel();
-        headPanel1 = new gui.home.HeadPanel();
+        contentPanel = new javax.swing.JPanel();
+        headPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        sidePannel1 = new gui.home.SidePannel();
-        dashboardButton = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        sidePannel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        dashboardBtn = new javax.swing.JButton();
+        dashboardBtn1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Home");
+        setTitle("Principle Home");
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         contentPanel.setLayout(new java.awt.CardLayout());
         jScrollPane1.setViewportView(contentPanel);
+
+        headPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 2));
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         jLabel1.setText("School Management System ");
@@ -72,38 +80,47 @@ public class PrincipleHome extends JFrame {
         jLabel2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 14)); // NOI18N
         jLabel2.setText("Profile : user profile");
 
-        javax.swing.GroupLayout headPanel1Layout = new javax.swing.GroupLayout(headPanel1);
-        headPanel1.setLayout(headPanel1Layout);
-        headPanel1Layout.setHorizontalGroup(
-            headPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(headPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout headPanelLayout = new javax.swing.GroupLayout(headPanel);
+        headPanel.setLayout(headPanelLayout);
+        headPanelLayout.setHorizontalGroup(
+            headPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(headPanelLayout.createSequentialGroup()
                 .addGap(62, 62, 62)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 913, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 962, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        headPanel1Layout.setVerticalGroup(
-            headPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headPanel1Layout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
-                .addGroup(headPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+        headPanelLayout.setVerticalGroup(
+            headPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headPanelLayout.createSequentialGroup()
+                .addContainerGap(35, Short.MAX_VALUE)
+                .addGroup(headPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
                 .addGap(27, 27, 27))
         );
 
-        dashboardButton.setText("User Enrollment");
-        dashboardButton.addActionListener(new java.awt.event.ActionListener() {
+        sidePannel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 2));
+
+        jLabel4.setBackground(new java.awt.Color(232, 232, 232));
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel4.setText("   User");
+        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+
+        dashboardBtn.setText("Dashboard");
+        dashboardBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                dashboardButtonActionPerformed(evt);
+                dashboardBtnActionPerformed(evt);
             }
         });
 
-        jLabel3.setBackground(new java.awt.Color(232, 232, 232));
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel3.setText("   User");
-        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        dashboardBtn1.setText("Enrollments");
+        dashboardBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dashboardBtn1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout sidePannel1Layout = new javax.swing.GroupLayout(sidePannel1);
         sidePannel1.setLayout(sidePannel1Layout);
@@ -112,21 +129,25 @@ public class PrincipleHome extends JFrame {
             .addGroup(sidePannel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(sidePannel1Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addComponent(dashboardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(dashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dashboardBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         sidePannel1Layout.setVerticalGroup(
             sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sidePannel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dashboardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(dashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dashboardBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(562, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -134,40 +155,45 @@ public class PrincipleHome extends JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(headPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(sidePannel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1)))
+                        .addComponent(jScrollPane1))
+                    .addComponent(headPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(headPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(headPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(sidePannel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 627, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1)
+                    .addComponent(sidePannel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void dashboardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardButtonActionPerformed
+    private void dashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtnActionPerformed
+        contentPanelLayout.show(contentPanel, "dashboard_panel");
+    }//GEN-LAST:event_dashboardBtnActionPerformed
+
+    private void dashboardBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn1ActionPerformed
         contentPanelLayout.show(contentPanel, "Enrollment_panel");
-    }//GEN-LAST:event_dashboardButtonActionPerformed
+    }//GEN-LAST:event_dashboardBtn1ActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-
         FlatLightLaf.setup();
 
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new PrincipleHome().setVisible(true);
@@ -176,13 +202,14 @@ public class PrincipleHome extends JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private gui.home.ContainerPannel contentPanel;
-    private javax.swing.JButton dashboardButton;
-    private gui.home.HeadPanel headPanel1;
+    private javax.swing.JPanel contentPanel;
+    private javax.swing.JButton dashboardBtn;
+    private javax.swing.JButton dashboardBtn1;
+    private javax.swing.JPanel headPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private gui.home.SidePannel sidePannel1;
+    private javax.swing.JPanel sidePannel1;
     // End of variables declaration//GEN-END:variables
 }
