@@ -4,17 +4,29 @@
  */
 package gui.registration;
 
+import user.registration.PrincipleRegistrationProcess;
+
 /**
  *
  * @author savaa
  */
 public class OfficerRegistration extends javax.swing.JPanel {
 
+    PrincipleRegistrationProcess principleRegistration = new PrincipleRegistrationProcess();
+
     /**
      * Creates new form StudentRegistration
      */
     public OfficerRegistration() {
         initComponents();
+        loadCombos();
+    }
+
+    private void loadCombos() {
+        principleRegistration.loadGender(jComboBox1);
+        principleRegistration.loadDrawerNo(jComboBox2);
+        principleRegistration.loadFileNo(jComboBox3);
+
     }
 
     /**
@@ -358,6 +370,11 @@ public class OfficerRegistration extends javax.swing.JPanel {
         imageLabel.setText("image");
         imageLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         imageLabel.setPreferredSize(new java.awt.Dimension(1242, 20));
+        imageLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                imageLabelMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -453,6 +470,13 @@ public class OfficerRegistration extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void imageLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_imageLabelMouseClicked
+
+        principleRegistration.loadImage(imageLabel);
+
+
+    }//GEN-LAST:event_imageLabelMouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox AppointmentCheckBox;
@@ -501,4 +525,5 @@ public class OfficerRegistration extends javax.swing.JPanel {
     private javax.swing.JCheckBox residentialCheckBox;
     private javax.swing.JCheckBox zonalCheckBox;
     // End of variables declaration//GEN-END:variables
+
 }

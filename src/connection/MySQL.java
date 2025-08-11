@@ -12,9 +12,9 @@ import java.sql.SQLException;
 
 public class MySQL {
 
-    private static final String DATABASE = "jdbc_connection";
+    private static final String DATABASE = "schools_db";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "SAva#123My94";
+    private static final String PASSWORD = "JustinBieber%7";
     private static Connection connection;
 
 
