@@ -24,17 +24,18 @@ import org.jfree.data.general.DefaultPieDataset;
  */
 public class GraphsPanel extends javax.swing.JPanel {
 
-    private ChartCreator Chart;
-
     /**
      * Creates new form dashboard
      */
     public GraphsPanel() {
         initComponents();
-        initBarChart();
+        initpieChart();
     }
+    private ChartCreator Chart;
 
-    private void initBarChart() {
+   
+
+    private void initpieChart() {
 
         Chart = new ChartCreator();
 
@@ -57,10 +58,6 @@ public class GraphsPanel extends javax.swing.JPanel {
         Chart.createPieChart(piChartPanel2, barDataset);
 
     }
-
-    ;
-
-
 
     /**
      * This method is called from within the constructor to initialize the form.

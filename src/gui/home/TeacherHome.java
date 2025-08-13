@@ -5,10 +5,13 @@
 package gui.home;
 
 import com.formdev.flatlaf.FlatLightLaf;
-import gui.assesment.records.RecordsBrief;
+import gui.assesment.AssignmentRecod;
+import gui.assesment.NewAssigment;
+import gui.assesment.records.RecodHistory;
+import gui.assesment.records.ReportCard;
 import gui.attendance.AttendanceMaking;
 import gui.dashboard.panel.AdminDashboardPanel;
-import gui.payment.FeeStructure;
+import gui.discipline.records.DisciplineRecord;
 import gui.registration.ModificationPane;
 import gui.registration.RegistrationPane;
 import gui.registration.usertracks.GraphsPanel;
@@ -20,20 +23,22 @@ import javax.swing.JFrame;
  *
  * @author sava
  */
-public class PrincipleHome extends javax.swing.JFrame {
+public class TeacherHome extends javax.swing.JFrame {
 
     private CardLayout contentPanelLayout;
     private AdminDashboardPanel dashboardPanel;
-    private GraphsPanel enrollmentPanel;
-    private ViewAllUsers allUserPanel;
-    private RecordsBrief recordBriefPanel;
-    private AttendanceMaking attendancePanel;
-    private FeeStructure feeStructurePanel;
+//    private GraphsPanel enrollmentPanel;
+//    private ViewAllUsers allUserPanel;
+    private AssignmentRecod assignMarksPanel;
+    private RecodHistory recordHistoryPanel;
+    private ReportCard reportCardPanel;
+    private AttendanceMaking attendanceMakinPanel;
+    private  DisciplineRecord disciplineRecordPanel;
 
     /**
      * Creates new form AdminHome
      */
-    public PrincipleHome() {
+    public TeacherHome() {
         initComponents();
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setPanels();
@@ -45,17 +50,20 @@ public class PrincipleHome extends javax.swing.JFrame {
 
             this.dashboardPanel = new AdminDashboardPanel();
             this.contentPanel.add(dashboardPanel, "dashboard_panel");
-            this.enrollmentPanel = new GraphsPanel();
-            this.contentPanel.add(enrollmentPanel, "Enrollment_panel");
-            this.allUserPanel = new ViewAllUsers();
-            this.contentPanel.add(allUserPanel, "allUser_panel");
-            this.recordBriefPanel = new RecordsBrief();
-            this.contentPanel.add(recordBriefPanel, "RecordBrief_panel");
-            this.attendancePanel = new AttendanceMaking();
-            this.contentPanel.add(attendancePanel, "attendance_panel");
-            this.feeStructurePanel = new FeeStructure();
-            this.contentPanel.add(feeStructurePanel, "feeStructure_panel");
-
+//            this.enrollmentPanel = new GraphsPanel();
+//            this.contentPanel.add(enrollmentPanel, "Enrollment_panel");
+//            this.allUserPanel = new ViewAllUsers();
+//            this.contentPanel.add(allUserPanel, "allUser_panel");
+            this.assignMarksPanel = new AssignmentRecod();
+            this.contentPanel.add(assignMarksPanel, "assignMarks_panel");
+            this.recordHistoryPanel = new RecodHistory();
+            this.contentPanel.add(recordHistoryPanel, "recordHistory_panel");
+            this.reportCardPanel = new ReportCard();
+            this.contentPanel.add(reportCardPanel, "reportCard_panel");
+            this.attendanceMakinPanel = new AttendanceMaking();
+            this.contentPanel.add(attendanceMakinPanel, "attendanceMaking_Panel");
+            this.disciplineRecordPanel = new DisciplineRecord();
+            this.contentPanel.add(disciplineRecordPanel, "disciplineRecord_Panel");
 
             contentPanelLayout.show(contentPanel, "dashboard_panel");
         }
@@ -82,12 +90,13 @@ public class PrincipleHome extends javax.swing.JFrame {
         dashboardBtn2 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         dashboardBtn3 = new javax.swing.JButton();
-        dashboardBtn4 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
         dashboardBtn5 = new javax.swing.JButton();
+        dashboardBtn6 = new javax.swing.JButton();
+        dashboardBtn4 = new javax.swing.JButton();
+        dashboardBtn7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Principle Home");
+        setTitle("Teacher Home");
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
@@ -127,7 +136,7 @@ public class PrincipleHome extends javax.swing.JFrame {
 
         jLabel4.setBackground(new java.awt.Color(232, 232, 232));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel4.setText("   User");
+        jLabel4.setText("Assigmnet");
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
         dashboardBtn.setText("Dashboard");
@@ -137,14 +146,13 @@ public class PrincipleHome extends javax.swing.JFrame {
             }
         });
 
-        dashboardBtn1.setText("All Users");
         dashboardBtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dashboardBtn1ActionPerformed(evt);
             }
         });
 
-        dashboardBtn2.setText("Enrollments");
+        dashboardBtn2.setText("Students Details");
         dashboardBtn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dashboardBtn2ActionPerformed(evt);
@@ -153,32 +161,41 @@ public class PrincipleHome extends javax.swing.JFrame {
 
         jLabel5.setBackground(new java.awt.Color(232, 232, 232));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel5.setText("Student Records");
+        jLabel5.setText("   User");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
-        dashboardBtn3.setText("Marks");
+        dashboardBtn3.setText("Record History");
         dashboardBtn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dashboardBtn3ActionPerformed(evt);
             }
         });
 
-        dashboardBtn4.setText("Attendance");
+        dashboardBtn5.setText("Marks Sheet");
+        dashboardBtn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dashboardBtn5ActionPerformed(evt);
+            }
+        });
+
+        dashboardBtn6.setText("Report Card");
+        dashboardBtn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dashboardBtn6ActionPerformed(evt);
+            }
+        });
+
+        dashboardBtn4.setText("Attendance Marking");
         dashboardBtn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dashboardBtn4ActionPerformed(evt);
             }
         });
 
-        jLabel6.setBackground(new java.awt.Color(232, 232, 232));
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel6.setText("Payments");
-        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-
-        dashboardBtn5.setText("Marks");
-        dashboardBtn5.addActionListener(new java.awt.event.ActionListener() {
+        dashboardBtn7.setText("Discipline Record");
+        dashboardBtn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                dashboardBtn5ActionPerformed(evt);
+                dashboardBtn7ActionPerformed(evt);
             }
         });
 
@@ -194,24 +211,27 @@ public class PrincipleHome extends javax.swing.JFrame {
                         .addGap(6, 6, 6)
                         .addComponent(dashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sidePannel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(dashboardBtn2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(dashboardBtn1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(dashboardBtn3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dashboardBtn5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dashboardBtn6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(dashboardBtn4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(dashboardBtn5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(dashboardBtn7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
+            .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(sidePannel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         sidePannel1Layout.setVerticalGroup(
             sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sidePannel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(66, 66, 66)
                 .addComponent(dashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dashboardBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -219,15 +239,22 @@ public class PrincipleHome extends javax.swing.JFrame {
                 .addComponent(dashboardBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dashboardBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dashboardBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dashboardBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dashboardBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(314, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dashboardBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(278, Short.MAX_VALUE))
+            .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(sidePannel1Layout.createSequentialGroup()
+                    .addGap(26, 26, 26)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(628, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -264,24 +291,32 @@ public class PrincipleHome extends javax.swing.JFrame {
     }//GEN-LAST:event_dashboardBtnActionPerformed
 
     private void dashboardBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn1ActionPerformed
-        contentPanelLayout.show(contentPanel, "allUser_panel");      
+        //contentPanelLayout.show(contentPanel, "allUser_panel");      
     }//GEN-LAST:event_dashboardBtn1ActionPerformed
 
     private void dashboardBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn2ActionPerformed
-         contentPanelLayout.show(contentPanel, "Enrollment_panel");
+        //contentPanelLayout.show(contentPanel, "Enrollment_panel");
     }//GEN-LAST:event_dashboardBtn2ActionPerformed
 
     private void dashboardBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn3ActionPerformed
-       contentPanelLayout.show(contentPanel, "RecordBrief_panel");
+        contentPanelLayout.show(contentPanel, "recordHistory_panel");
     }//GEN-LAST:event_dashboardBtn3ActionPerformed
 
+    private void dashboardBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn5ActionPerformed
+        contentPanelLayout.show(contentPanel, "assignMarks_panel");
+    }//GEN-LAST:event_dashboardBtn5ActionPerformed
+
+    private void dashboardBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn6ActionPerformed
+        contentPanelLayout.show(contentPanel, "reportCard_panel");
+    }//GEN-LAST:event_dashboardBtn6ActionPerformed
+
     private void dashboardBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn4ActionPerformed
-        contentPanelLayout.show(contentPanel, "attendance_panel");
+          contentPanelLayout.show(contentPanel, "attendanceMaking_Panel");
     }//GEN-LAST:event_dashboardBtn4ActionPerformed
 
-    private void dashboardBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn5ActionPerformed
-       contentPanelLayout.show(contentPanel, "feeStructure_panel");
-    }//GEN-LAST:event_dashboardBtn5ActionPerformed
+    private void dashboardBtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn7ActionPerformed
+        contentPanelLayout.show(contentPanel, "disciplineRecord_Panel");
+    }//GEN-LAST:event_dashboardBtn7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -292,7 +327,7 @@ public class PrincipleHome extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PrincipleHome().setVisible(true);
+                new TeacherHome().setVisible(true);
             }
         });
     }
@@ -305,12 +340,13 @@ public class PrincipleHome extends javax.swing.JFrame {
     private javax.swing.JButton dashboardBtn3;
     private javax.swing.JButton dashboardBtn4;
     private javax.swing.JButton dashboardBtn5;
+    private javax.swing.JButton dashboardBtn6;
+    private javax.swing.JButton dashboardBtn7;
     private javax.swing.JPanel headPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel sidePannel1;
     // End of variables declaration//GEN-END:variables

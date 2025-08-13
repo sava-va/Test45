@@ -20,7 +20,7 @@ public class RegistrationPane extends javax.swing.JPanel {
 
     private void initiatePanels() {
 
-               jTabbedPane1.add(new OfficerRegistration(), "Admin Registration",0);
+        jTabbedPane1.add(new OfficerRegistration(), "Admin Registration",0);
         jTabbedPane1.add(new OfficerRegistration(), "Principle Registration",1);
         jTabbedPane1.add(new OfficerRegistration(), "Teacher Registration",2);
         jTabbedPane1.add(new OfficerRegistration(), "Gurdient Registration",3);

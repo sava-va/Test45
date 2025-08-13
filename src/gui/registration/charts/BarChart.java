@@ -21,7 +21,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
  */
 public class BarChart {
     
-    public void showBarChart(JPanel panelLineChart, DefaultCategoryDataset dataset) {
+    public void showBarChart(JPanel barChart, DefaultCategoryDataset dataset) {
 
 
         JFreeChart chart = ChartFactory.createBarChart("contribution", "monthly", "amount",
@@ -35,9 +35,9 @@ public class BarChart {
         renderer.setSeriesPaint(0, clr3);
 
         ChartPanel barpChartPanel = new ChartPanel(chart);
-        panelLineChart.removeAll();
-        panelLineChart.add(barpChartPanel, BorderLayout.CENTER);
-        panelLineChart.validate();
+        barChart.removeAll();
+        barChart.add(barpChartPanel, BorderLayout.CENTER);
+        barChart.validate();
 
     }
 }

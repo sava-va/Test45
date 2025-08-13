@@ -10,12 +10,12 @@ import gui.equipmnt.*;
  *
  * @author savaa
  */
-public class NewAssigment extends javax.swing.JDialog {
+public class UpdateAssigment extends javax.swing.JDialog {
 
     /**
      * Creates new form LocationRegistration
      */
-    public NewAssigment(java.awt.Frame parent, boolean modal) {
+    public UpdateAssigment(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -42,7 +42,7 @@ public class NewAssigment extends javax.swing.JDialog {
         jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("New Assignment");
+        setTitle("Update Assignmet");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 2));
 
@@ -62,7 +62,7 @@ public class NewAssigment extends javax.swing.JDialog {
         jLabel6.setFont(new java.awt.Font("Yu Gothic UI", 0, 13)); // NOI18N
         jLabel6.setText("Assignment Name");
 
-        jButton1.setText("ADD");
+        jButton1.setText("Update");
 
         jComboBox1.setPreferredSize(new java.awt.Dimension(72, 32));
 
@@ -161,21 +161,23 @@ public class NewAssigment extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewAssigment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UpdateAssigment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewAssigment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UpdateAssigment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewAssigment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UpdateAssigment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewAssigment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UpdateAssigment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                NewAssigment dialog = new NewAssigment(new javax.swing.JFrame(), true);
+                UpdateAssigment dialog = new UpdateAssigment(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
