@@ -6,6 +6,9 @@ package gui.home;
 
 import com.formdev.flatlaf.FlatLightLaf;
 import gui.dashboard.panel.AdminDashboardPanel;
+import gui.equipmnt.EquipmentModification;
+import gui.equipmnt.EquipmentRegistration;
+import gui.equipmnt.ViewAllEquipments;
 import gui.registration.ModificationPane;
 import gui.registration.RegistrationPane;
 import gui.registration.usertracks.GraphsPanel;
@@ -22,6 +25,9 @@ public class AdminHome extends javax.swing.JFrame {
     private AdminDashboardPanel dashboardPanel;
     private RegistrationPane registrationPanel;
     private ModificationPane modificationPanel;
+    private EquipmentRegistration addEquipmentPanel;
+    private EquipmentModification modififyEquipmentPanel;
+    private ViewAllEquipments ViewEquipmentListPanel;
 
     /**
      * Creates new form AdminHome
@@ -42,6 +48,14 @@ public class AdminHome extends javax.swing.JFrame {
             this.contentPanel.add(registrationPanel, "registration_panel");
             this.modificationPanel = new ModificationPane();
             this.contentPanel.add(modificationPanel, "modification_panel");
+            this.contentPanel.add(registrationPanel, "registration_panel");
+            this.addEquipmentPanel = new EquipmentRegistration();
+            this.contentPanel.add(addEquipmentPanel, "addEquipment_panel");
+            this.modififyEquipmentPanel = new EquipmentModification();
+            this.contentPanel.add(modififyEquipmentPanel, "modififyEquipment_panel");
+            this.ViewEquipmentListPanel = new ViewAllEquipments();
+            this.contentPanel.add(ViewEquipmentListPanel, "ViewEquipmentList_panel");
+
 
             contentPanelLayout.show(contentPanel, "dashboard_panel");
         }
@@ -66,6 +80,10 @@ public class AdminHome extends javax.swing.JFrame {
         dashboardBtn = new javax.swing.JButton();
         dashboardBtn1 = new javax.swing.JButton();
         dashboardBtn2 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        dashboardBtn3 = new javax.swing.JButton();
+        dashboardBtn4 = new javax.swing.JButton();
+        dashboardBtn5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Admin Home");
@@ -132,6 +150,32 @@ public class AdminHome extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setBackground(new java.awt.Color(232, 232, 232));
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel5.setText("Equipment");
+        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+
+        dashboardBtn3.setText("Add Equipment");
+        dashboardBtn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dashboardBtn3ActionPerformed(evt);
+            }
+        });
+
+        dashboardBtn4.setText("All Equipment");
+        dashboardBtn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dashboardBtn4ActionPerformed(evt);
+            }
+        });
+
+        dashboardBtn5.setText("Modify Equipment");
+        dashboardBtn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dashboardBtn5ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout sidePannel1Layout = new javax.swing.GroupLayout(sidePannel1);
         sidePannel1.setLayout(sidePannel1Layout);
         sidePannel1Layout.setHorizontalGroup(
@@ -140,13 +184,17 @@ public class AdminHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(sidePannel1Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(dashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(dashboardBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(dashboardBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                            .addComponent(dashboardBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dashboardBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dashboardBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dashboardBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 10, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         sidePannel1Layout.setVerticalGroup(
@@ -160,7 +208,15 @@ public class AdminHome extends javax.swing.JFrame {
                 .addComponent(dashboardBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dashboardBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(524, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dashboardBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dashboardBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(dashboardBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(359, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -204,6 +260,18 @@ public class AdminHome extends javax.swing.JFrame {
         contentPanelLayout.show(contentPanel, "modification_panel");
     }//GEN-LAST:event_dashboardBtn2ActionPerformed
 
+    private void dashboardBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn3ActionPerformed
+         contentPanelLayout.show(contentPanel, "addEquipment_panel");
+    }//GEN-LAST:event_dashboardBtn3ActionPerformed
+
+    private void dashboardBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn4ActionPerformed
+         contentPanelLayout.show(contentPanel, "ViewEquipmentList_panel");
+    }//GEN-LAST:event_dashboardBtn4ActionPerformed
+
+    private void dashboardBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn5ActionPerformed
+         contentPanelLayout.show(contentPanel, "modififyEquipment_panel");
+    }//GEN-LAST:event_dashboardBtn5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -223,10 +291,14 @@ public class AdminHome extends javax.swing.JFrame {
     private javax.swing.JButton dashboardBtn;
     private javax.swing.JButton dashboardBtn1;
     private javax.swing.JButton dashboardBtn2;
+    private javax.swing.JButton dashboardBtn3;
+    private javax.swing.JButton dashboardBtn4;
+    private javax.swing.JButton dashboardBtn5;
     private javax.swing.JPanel headPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel sidePannel1;
     // End of variables declaration//GEN-END:variables

@@ -2,18 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package gui.attendance;
+package gui.timetable;
+
+import gui.attendance.*;
 
 /**
  *
  * @author sava
  */
-public class NameButtonPanel extends javax.swing.JPanel {
+public class ClassButtonTag extends javax.swing.JPanel {
 
     /**
      * Creates new form nameButtonPanel
      */
-    public NameButtonPanel() {
+    public ClassButtonTag() {
         initComponents();
     }
 
@@ -26,11 +28,9 @@ public class NameButtonPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        nameButton = new javax.swing.JToggleButton();
+        jButton1 = new javax.swing.JButton();
 
-        nameButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        nameButton.setText("1. Example name");
-        nameButton.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton1.setText("Name");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -38,20 +38,20 @@ public class NameButtonPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(nameButton, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(nameButton, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton nameButton;
+    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
