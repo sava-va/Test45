@@ -4,18 +4,25 @@
  */
 package gui.attendance;
 
+import javax.swing.JPanel;
+
 /**
  *
- * @author sava
+ * @author savaa
  */
-public class NameButtonPanel extends javax.swing.JPanel {
+public class NameTagBar extends javax.swing.JPanel {
 
     /**
-     * Creates new form nameButtonPanel
+     * Creates new form OneZeroMarks
      */
-    public NameButtonPanel() {
+    public NameTagBar() {
         initComponents();
     }
+
+    public JPanel getGridPanel() {
+        return gridPanel;
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,32 +33,28 @@ public class NameButtonPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        nameButton = new javax.swing.JToggleButton();
+        gridPanel = new javax.swing.JPanel();
 
-        nameButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        nameButton.setText("1. Example name");
-        nameButton.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        setPreferredSize(new java.awt.Dimension(990, 37));
+
+        gridPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        gridPanel.setPreferredSize(new java.awt.Dimension(800, 2));
+        gridPanel.setLayout(new java.awt.GridLayout(0, 1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(nameButton, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(gridPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(nameButton, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(gridPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 556, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton nameButton;
+    private javax.swing.JPanel gridPanel;
     // End of variables declaration//GEN-END:variables
 }

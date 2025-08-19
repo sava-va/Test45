@@ -56,7 +56,7 @@
   <SubComponents>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
       <Properties>
-        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+        <Property name="horizontalScrollBarPolicy" type="int" value="32"/>
       </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
@@ -248,6 +248,9 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="dashboardBtn1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Attendance View"/>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dashboardBtn1ActionPerformed"/>
           </Events>

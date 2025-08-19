@@ -6,17 +6,34 @@ package gui.attendance;
 
 /**
  *
- * @author savaa
+ * @author sava
  */
-public class OneZeroMarks extends javax.swing.JPanel {
+public class NameLabelTag extends javax.swing.JPanel {
 
     /**
-     * Creates new form OneZeroMarks
+     * Creates new form nameButtonPanel
      */
-    public OneZeroMarks(String mark) {
+    private String fname;
+    private String lname;
+    private int id;
+
+    public NameLabelTag(int id, String fname, String lname) {
         initComponents();
-        jLabel1.setText(mark);
+        this.fname = fname;
+        this.lname = lname;
+        this.id = id;
+        setNameToTag();
     }
+    
+
+    private void setNameToTag() {
+        nameLabel.setText(id +"."+fname+" "+lname);
+    }
+
+    public int getId() {
+        return id;
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -27,29 +44,27 @@ public class OneZeroMarks extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        nameLabel = new javax.swing.JLabel();
 
-        setPreferredSize(new java.awt.Dimension(25, 25));
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("0");
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        nameLabel.setText("jLabel1");
+        nameLabel.setAlignmentX(2.0F);
+        nameLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+            .addComponent(nameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+            .addComponent(nameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel nameLabel;
     // End of variables declaration//GEN-END:variables
+
 }

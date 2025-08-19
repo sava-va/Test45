@@ -59,8 +59,8 @@ public class PrincipalHome extends javax.swing.JFrame {
             this.contentPanel.add(allUserPanel, "allUser_panel");
             this.recordBriefPanel = new RecordsBrief();
             this.contentPanel.add(recordBriefPanel, "RecordBrief_panel");
-            this.attendancePanel = new AttendanceMaking();
-            this.contentPanel.add(attendancePanel, "attendance_panel");
+//            this.attendancePanel = new AttendanceMaking(TECHER_ID, ClASS_ID);
+//            this.contentPanel.add(attendancePanel, "attendance_panel");
             this.attendanceListPanel = new ViewAllAttendence();
             this.contentPanel.add(attendanceListPanel, "attencdaceList_panel");
             this.feeStructurePanel = new FeeStructure();

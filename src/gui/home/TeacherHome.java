@@ -10,14 +10,11 @@ import gui.assesment.NewAssigment;
 import gui.assesment.records.RecodHistory;
 import gui.assesment.records.ReportCard;
 import gui.attendance.AttendanceMaking;
+import gui.attendance.AttendanceSheetTeacher;
 import gui.dashboard.panel.AdminDashboardPanel;
 import gui.discipline.records.DisciplineRecord;
 import gui.leave.LeaveForm;
 import gui.payment.FeeCollectionForm;
-import gui.registration.ModificationPane;
-import gui.registration.RegistrationPane;
-import gui.registration.usertracks.GraphsPanel;
-import gui.registration.usertracks.ViewAllUsers;
 import java.awt.CardLayout;
 import javax.swing.JFrame;
 
@@ -27,14 +24,16 @@ import javax.swing.JFrame;
  */
 public class TeacherHome extends javax.swing.JFrame {
 
+    static String TECHER_ID = "1";
+    static int ClASS_ID = 1;
+    
     private CardLayout contentPanelLayout;
     private AdminDashboardPanel dashboardPanel;
-//    private GraphsPanel enrollmentPanel;
-//    private ViewAllUsers allUserPanel;
     private AssignmentRecod assignMarksPanel;
     private RecodHistory recordHistoryPanel;
     private ReportCard reportCardPanel;
     private AttendanceMaking attendanceMakinPanel;
+    private AttendanceSheetTeacher attendanceViewPanel;
     private  DisciplineRecord disciplineRecordPanel;
     private  FeeCollectionForm feeCollectionPanel;
     private  LeaveForm leaveFormPanel;
@@ -64,8 +63,10 @@ public class TeacherHome extends javax.swing.JFrame {
             this.contentPanel.add(recordHistoryPanel, "recordHistory_panel");
             this.reportCardPanel = new ReportCard();
             this.contentPanel.add(reportCardPanel, "reportCard_panel");
-            this.attendanceMakinPanel = new AttendanceMaking();
+            this.attendanceMakinPanel = new AttendanceMaking(TECHER_ID, ClASS_ID);
             this.contentPanel.add(attendanceMakinPanel, "attendanceMaking_Panel");
+            this.attendanceViewPanel = new AttendanceSheetTeacher(TECHER_ID, ClASS_ID);
+            this.contentPanel.add(attendanceViewPanel, "attendanceView_Panel");
             this.disciplineRecordPanel = new DisciplineRecord();
             this.contentPanel.add(disciplineRecordPanel, "disciplineRecord_Panel");
             this.feeCollectionPanel = new FeeCollectionForm();
@@ -112,7 +113,7 @@ public class TeacherHome extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Teacher Home");
 
-        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
 
         contentPanel.setLayout(new java.awt.CardLayout());
         jScrollPane1.setViewportView(contentPanel);
@@ -160,6 +161,7 @@ public class TeacherHome extends javax.swing.JFrame {
             }
         });
 
+        dashboardBtn1.setText("Attendance View");
         dashboardBtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dashboardBtn1ActionPerformed(evt);
@@ -359,7 +361,7 @@ public class TeacherHome extends javax.swing.JFrame {
     }//GEN-LAST:event_dashboardBtnActionPerformed
 
     private void dashboardBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn1ActionPerformed
-        //contentPanelLayout.show(contentPanel, "allUser_panel");      
+        contentPanelLayout.show(contentPanel, "attendanceView_Panel");
     }//GEN-LAST:event_dashboardBtn1ActionPerformed
 
     private void dashboardBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn2ActionPerformed

@@ -12,20 +12,13 @@ import java.sql.SQLException;
 
 public class MySQL {
 
-    private static final String DATABASE = "jdbc_connection";
-    private static final String USERNAME = "root";
-    private static final String PASSWORD = "SAva#123My94";
     private static Connection connection;
-
 
     public static Connection createConnection() {
         try {
             if (connection == null) {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                connection = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/"+ DATABASE,
-                        USERNAME,
-                        PASSWORD
+                connection = DriverManager.getConnection(DBConfig.getUrl(), DBConfig.getUsername(), DBConfig.getPassword()
                 );
             }
 
