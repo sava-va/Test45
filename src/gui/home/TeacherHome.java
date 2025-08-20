@@ -24,8 +24,8 @@ import javax.swing.JFrame;
  */
 public class TeacherHome extends javax.swing.JFrame {
 
-    static String TECHER_ID = "1";
-    static int ClASS_ID = 1;
+    static String TECHER_ID = "2";
+    static int ClASS_ID = 2;
     
     private CardLayout contentPanelLayout;
     private AdminDashboardPanel dashboardPanel;

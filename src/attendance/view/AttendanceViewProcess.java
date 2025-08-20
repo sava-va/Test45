@@ -4,26 +4,15 @@
  */
 package attendance.view;
 
-import attendance.mark.*;
 import connection.MySQL;
-import gui.attendance.NameButtonTag;
 import gui.attendance.NameLabelTag;
 import gui.attendance.NameTagBar;
 import gui.attendance.OneZeroMarks;
-import java.awt.Component;
-import java.awt.GridLayout;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -63,7 +52,7 @@ public class AttendanceViewProcess {
                 }
             }
             while (dateRs.next()) {
-                String marks = "SELECT * FROM attendance WHERE date_id = " + dateRs.getString("id") + " AND class_id = " + class_id + "";
+                String marks = "SELECT * FROM attendance_student WHERE date_id = " + dateRs.getString("id") + " AND class_id = " + class_id + "";
                 ResultSet marksRs = MySQL.execute(marks);
                 NameTagBar ntb = new NameTagBar();
                 while (marksRs.next()) {

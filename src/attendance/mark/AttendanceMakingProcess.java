@@ -35,7 +35,7 @@ public class AttendanceMakingProcess {
             int dateId = getOrCreateDateId(conn, selectedDate);
 
             // Step 2: Loop through buttons
-            String sql = "INSERT INTO attendance (student_id, date_id, status,class_id) VALUES (?, ?, ?, ?) "
+            String sql = "INSERT INTO attendance_student (student_id, date_id, status,class_id) VALUES (?, ?, ?, ?) "
                     + "ON DUPLICATE KEY UPDATE status = VALUES(status)";
             PreparedStatement ps = conn.prepareStatement(sql);
 

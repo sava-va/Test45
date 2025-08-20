@@ -17,6 +17,7 @@ import gui.registration.RegistrationPane;
 import gui.registration.usertracks.GraphsPanel;
 import gui.registration.usertracks.ViewAllUsers;
 import gui.timetable.DailyUpdateTimeTable;
+import gui.timetable.ModifyTimeTable;
 import java.awt.CardLayout;
 import javax.swing.JFrame;
 
@@ -37,6 +38,7 @@ public class PrincipalHome extends javax.swing.JFrame {
     private ViewCalendar yearCalendarPanel;
     private ModifyCalendar modifyCalendarPanel;
     private DailyUpdateTimeTable dailyTimeTablPanel;
+    private ModifyTimeTable modifyTimeTablePanel;
 
     /**
      * Creates new form AdminHome
@@ -71,6 +73,8 @@ public class PrincipalHome extends javax.swing.JFrame {
             this.contentPanel.add(modifyCalendarPanel, "modifyCalendar_Panel");
             this.dailyTimeTablPanel = new DailyUpdateTimeTable();
             this.contentPanel.add(dailyTimeTablPanel, "dailyTimeTable_Panel");
+            this.modifyTimeTablePanel = new ModifyTimeTable();
+            this.contentPanel.add(modifyTimeTablePanel, "modifyTimeTable_Panel");
 
 
             contentPanelLayout.show(contentPanel, "dashboard_panel");
@@ -109,6 +113,7 @@ public class PrincipalHome extends javax.swing.JFrame {
         dashboardBtn8 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         dashboardBtn9 = new javax.swing.JButton();
+        dashboardBtn10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Principle Home");
@@ -249,6 +254,13 @@ public class PrincipalHome extends javax.swing.JFrame {
             }
         });
 
+        dashboardBtn10.setText("Modify Time Table");
+        dashboardBtn10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dashboardBtn10ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout sidePannel1Layout = new javax.swing.GroupLayout(sidePannel1);
         sidePannel1.setLayout(sidePannel1Layout);
         sidePannel1Layout.setHorizontalGroup(
@@ -256,9 +268,6 @@ public class PrincipalHome extends javax.swing.JFrame {
             .addGroup(sidePannel1Layout.createSequentialGroup()
                 .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(sidePannel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(dashboardBtn9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(dashboardBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(dashboardBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -272,7 +281,12 @@ public class PrincipalHome extends javax.swing.JFrame {
                     .addComponent(dashboardBtn6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(dashboardBtn7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(dashboardBtn8, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE))
+                    .addComponent(dashboardBtn8, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)
+                    .addGroup(sidePannel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(sidePannel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(dashboardBtn9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(dashboardBtn10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         sidePannel1Layout.setVerticalGroup(
@@ -281,36 +295,38 @@ public class PrincipalHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dashboardBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
-                .addComponent(dashboardBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(dashboardBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dashboardBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dashboardBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dashboardBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(7, 7, 7)
-                .addComponent(dashboardBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dashboardBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dashboardBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dashboardBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dashboardBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dashboardBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
                 .addGap(0, 0, 0)
-                .addComponent(dashboardBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(dashboardBtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(dashboardBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dashboardBtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dashboardBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(dashboardBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dashboardBtn10, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(sidePannel1);
@@ -385,6 +401,10 @@ public class PrincipalHome extends javax.swing.JFrame {
         contentPanelLayout.show(contentPanel, "dailyTimeTable_Panel");
     }//GEN-LAST:event_dashboardBtn9ActionPerformed
 
+    private void dashboardBtn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtn10ActionPerformed
+         contentPanelLayout.show(contentPanel, "modifyTimeTable_Panel");
+    }//GEN-LAST:event_dashboardBtn10ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -403,6 +423,7 @@ public class PrincipalHome extends javax.swing.JFrame {
     private javax.swing.JPanel contentPanel;
     private javax.swing.JButton dashboardBtn;
     private javax.swing.JButton dashboardBtn1;
+    private javax.swing.JButton dashboardBtn10;
     private javax.swing.JButton dashboardBtn2;
     private javax.swing.JButton dashboardBtn3;
     private javax.swing.JButton dashboardBtn4;
